@@ -4,7 +4,7 @@ import '@fontsource/bebas-neue';
 
 const LoadingScreen = () => {
   return (
-    <div className='bg-[#101010] h-[100vh] w-[100vw] flex flex-col py-8 px-0 font-bold justify-center relative '>
+    <div className='bg-[#101010] h-[100vh] w-[100vw] flex flex-col py-0 px-0 font-bold justify-center relative '>
       <LoadingBar/>
     </div>
   )

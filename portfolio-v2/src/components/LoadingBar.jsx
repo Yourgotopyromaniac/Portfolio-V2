@@ -10,7 +10,7 @@ const LoadingBar = () => {
 
   useEffect(() => {
     loadBar.start({
-      height: '91vh', 
+      height: '100vh', 
       transition : { duration: 1, delay: 4 }
     }).then(() => {
       loadBar.start({
