@@ -79,6 +79,7 @@ const LoadingBar = () => {
             width: `${progress}%`,
             transition: '0.2s ease-in-out',
             background: '#e6e6e6',
+            transformOrigin: 'center'
           }}
           layout
         ></motion.div>
@@ -87,7 +88,7 @@ const LoadingBar = () => {
       </motion.div>
       <motion.p
         animate={cover}
-        className='text-[#e6e6e6] text-[78px] font-extrabold font-bebas top-12 md:top-10 left-14 absolute'>{`${progress}%`}</motion.p>
+        className='text-[#e6e6e6] text-[78px] font-extrabold font-bebas top-12 left-10 md:top-10 md:left-14 absolute'>{`${progress}%`}</motion.p>
     </div>
   );
 };
