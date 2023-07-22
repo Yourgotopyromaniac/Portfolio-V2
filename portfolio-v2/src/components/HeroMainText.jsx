@@ -5,7 +5,7 @@ import '@fontsource-variable/space-grotesk';
 
 const HeroMainText = () => {
   return (
-    <motion.h1 className='text-[64px] font-bebas text-center z-10'>Hello I'm a dude who does stuff crazy right?</motion.h1>
+    <motion.h1 className='text-[64px] md:text-[120px] w-[70%] leading-tight font-bebas text-center z-[8]'>I&#39;m Biola and I can build <span className='text-red-500'>anything</span> with <span className='text-red-500'>anything</span> </motion.h1>
   )
 }
 

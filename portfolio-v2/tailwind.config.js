@@ -11,7 +11,8 @@ module.exports = {
     },
     fontFamily: {
       'bebas': ['Bebas Neue', 'sans-serif'],
-      'space' : ['Space Grotesk Variable', 'sans-serif']
+      'space' : ['Space Grotesk Variable', 'sans-serif'],
+      'tourney' : ['Tourney Variable', 'sans-serif']
     }
   },
   plugins: [],
