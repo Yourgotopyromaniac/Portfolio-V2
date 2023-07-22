@@ -28,7 +28,7 @@ const LoadingBar = () => {
     }).then(() => {
       reveal.start({
         height: 0,
-        transition: { duration: 1, delay: 1, ease: easeInOut }
+        transition: { duration: 1, delay: 0, ease: easeInOut }
       });
     });
   }, [reveal]);
