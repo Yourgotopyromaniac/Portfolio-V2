@@ -44,7 +44,7 @@ const LoadingScreen = () => {
 
   useEffect(() => {
     cover.start({
-      color: '#101010',
+      color: '#050505',
       transition: { duration: 0.5, delay: 5.1 },
     }).then(() => {
       cover.start({
@@ -64,7 +64,7 @@ const LoadingScreen = () => {
       <motion.div
         animate={{ display: 'none' }}
         transition={{ delay: 6 }}
-        className='bg-[#101010] h-[100vh] w-[100vw] flex flex-col py-0 px-0 font-bold justify-center relative'>
+        className='bg-[#050505] h-[100vh] w-[100vw] flex flex-col py-0 px-0 font-bold justify-center relative'>
 
         <LoadingBar />
       </motion.div>

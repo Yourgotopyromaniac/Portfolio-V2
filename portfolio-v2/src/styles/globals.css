@@ -2,9 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
+* {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
     user-select: none;
 }
 
+@layer utilities {
+    .nav-dot{
+        background-color: black;
+        height: 4px;
+        width: 48px;
+        border: 1px solid #ff3333;
+    }
+}
+
+body{
+    background-color: black;
+    color: #e6e6e6 ;
+}
