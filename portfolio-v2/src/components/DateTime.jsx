@@ -22,7 +22,7 @@ const DateTime = () => {
     const formattedTime = format(currentTime, 'HH:mm:ss');
 
     return (
-        <div className='font-bebas text-md flex flex-col gap-2 fixed z-50 bottom-8 right-8'>
+        <div className='font-bebas text-md flex flex-col gap-2 fixed z-10 bottom-8 right-8'>
             <div className='text-red-500' suppressHydrationWarning>{formattedTime}</div>
             <div className='text-[#e6e6e6]' suppressHydrationWarning>{formattedDate}</div>
         </div>

@@ -50,7 +50,6 @@ const LoadingBar = () => {
             width: `${progress}%`,
             transition: '0.2s ease-in-out',
             background: '#e6e6e6',
-            transformOrigin: 'center'
           }}
           layout
         ></motion.div>
