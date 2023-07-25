@@ -12,13 +12,13 @@ const HeroMainText = () => {
           animate={{ width: 0 }}
           transition={{ duration: 0.8, delay: 7, ease: easeInOut }}
           layout
-          className='absolute w-full h-1/2 self-end top-0 origin-left bg-[#0d0d0d] mix-blend-multiply'></motion.div>
+          className='absolute w-full h-1/2 self-end top-0 origin-left bg-[#0a0a0a] mix-blend-multiply'></motion.div>
         <motion.div
           initial={{ width: '100%' }}
           animate={{ width: 0 }}
           transition={{ duration: 0.8, delay: 7.2, ease: easeInOut }}
           layout
-          className='absolute w-full h-1/2 self-end bottom-0 origin-left bg-[#0d0d0d]'></motion.div>
+          className='absolute w-full h-1/2 self-end bottom-0 origin-left bg-[#0a0a0a]'></motion.div>
         <h1>I&#39;m Biola and I </h1>
 
       </div>
@@ -28,7 +28,7 @@ const HeroMainText = () => {
           animate={{ height: 0 }}
           transition={{ duration: 0.8, delay: 7.2, ease: easeInOut }}
           layout
-          className='absolute w-full h-full origin-top self-end bg-[#0d0d0d] mix-blend-multiply'></motion.div>
+          className='absolute w-full h-full origin-top self-end bg-[#0a0a0a] mix-blend-multiply'></motion.div>
         <div className='flex gap-4'><span>build</span> <HeroMainTag /> </div></div>
 
       <div className='relative flex' >
@@ -37,13 +37,13 @@ const HeroMainText = () => {
           animate={{ width: 0 }}
           transition={{ duration: 0.8, delay: 7.2, ease: easeInOut }}
           layout
-          className='absolute origin-left right-0 bottom-0 h-1/2 bg-[#0d0d0d]'></motion.div>
+          className='absolute origin-left right-0 bottom-0 h-1/2 bg-[#0a0a0a]'></motion.div>
         <motion.div
           initial={{ width: '100%' }}
           animate={{ width: 0 }}
           transition={{ duration: 0.8, delay: 7.4, ease: easeInOut }}
           layout
-          className='absolute origin-left right-0 top-0 h-1/2 bg-[#0d0d0d]'></motion.div>
+          className='absolute origin-left right-0 top-0 h-1/2 bg-[#0a0a0a]'></motion.div>
 
         <h1>with <span className='text-red-500'>NextJS</span></h1></div>
 

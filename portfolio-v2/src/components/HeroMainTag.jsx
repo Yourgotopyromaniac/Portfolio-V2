@@ -37,42 +37,42 @@ const HeroMainTag = () => {
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8.3 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8.7 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8.1 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8.4 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8.2 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8.5 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 3, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 3, delay: 8.6 }}
-          className='bg-[#0d0d0d]'>
+          className='bg-[#0a0a0a]'>
         </motion.div>
       </div>
       <motion.span className='text-red-500'>{tagText}</motion.span>
