@@ -6,7 +6,7 @@ import styles from '@/styles/Menu/menu.module.css'
 import { useState } from "react";
 import { motion } from "framer-motion";
 import sun from "@/assets/sunSvg.svg";
-import moon from "@/assets/moonSvg.svg";
+import moon from "@/assets/moon2.svg";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../store/themeSlice";
@@ -84,15 +84,15 @@ const Home = ()=>  {
         </div>
       </nav>
 
-        <motion.div variants={variants} initial="closed" animate={ isOpen ? "open" : "closed" } transition={{duration : 0.2, delay: 0}} className='bg-[#ff3333] fixed border-[#050505] border-b-2 z-[100] top-0 h-[25vh] w-full '></motion.div>
-        <motion.div variants={variants} initial="closed" animate={ isOpen ? "open" : "closed" } transition={{duration : 0.2, delay: 0.1}} className='bg-[#ff3333] fixed border-[#050505] border-b-2 z-[100] top-[25vh] h-[25vh] w-full'></motion.div>
-        <motion.div variants={variants} initial="closed" animate={ isOpen ? "open" : "closed" } transition={{duration : 0.2, delay: 0.2}} className='bg-[#ff3333] fixed border-[#050505] border-b-2 z-[100] top-[50vh] h-[25vh] w-full'></motion.div>
+        <motion.div variants={variants} initial="closed" animate={ isOpen ? "open" : "closed" } transition={{duration : 0.2, delay: 0}} className='bg-[#ff3333] fixed border-[#e6e6e6] border-b-2 z-[100] top-0 h-[25vh] w-full '></motion.div>
+        <motion.div variants={variants} initial="closed" animate={ isOpen ? "open" : "closed" } transition={{duration : 0.2, delay: 0.1}} className='bg-[#ff3333] fixed border-[#e6e6e6] border-b-2 z-[100] top-[25vh] h-[25vh] w-full'></motion.div>
+        <motion.div variants={variants} initial="closed" animate={ isOpen ? "open" : "closed" } transition={{duration : 0.2, delay: 0.2}} className='bg-[#ff3333] fixed border-[#e6e6e6] border-b-2 z-[100] top-[50vh] h-[25vh] w-full'></motion.div>
       <motion.div variants={variants} initial="closed" animate={ isOpen ? "open" : "closed" }transition={{duration : 0.2, delay: 0.3}} className='bg-[#ff3333] fixed border-[#050505] border-b-2 z-[100] top-[75vh] h-[25vh] w-full'></motion.div>
 
 
      
-      <nav onClick={handleTheme} className={`flex items-center overflow-hidden fixed z-[120] bottom-8 left-8 transition-all duration-1000 ease-in-out justify-center rounded-[50%] border-[1px] border-[#ff3333] w-[35px] h-[35px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
-      <div  className={`flex flex-col relative top-[14px] transition-all duration-500 ease-in-out gap-1 w-[25px] ${isDark ? 'rotate-0' : 'rotate-180'}  `}>
+      <nav onClick={handleTheme} className={`flex items-center overflow-hidden fixed z-[120] bottom-8 left-8 transition-all duration-1000 ease-in-out justify-center rounded-[50%] border-[2px] border-[#ff3333] w-[35px] h-[35px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
+      <div  className={`flex flex-col relative top-[16px] transition-all duration-500 ease-in-out gap-2 w-[25px] ${isDark ? 'rotate-0' : 'rotate-180'}  `}>
         <div>
           <Image width={25} height={25} src={moon} alt="moon icon" />
         </div>
