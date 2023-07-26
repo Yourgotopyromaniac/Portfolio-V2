@@ -5,7 +5,7 @@ import HeroMainTag from './HeroMainTag';
 const HeroMainText = () => {
 
   return (
-    <div className='text-[90px] flex flex-col items-start md:items-center justify-center h-full leading-tight gap-0 md:text-[120px] w-[70%] font-bebas text-start md:text-center z-[8]'>
+    <div className='text-[90px] flex flex-col items-start md:items-center justify-center h-full leading-tight gap-0 md:text-[120px] w-[75%] font-bebas text-start md:text-center z-[8]'>
       <div className='relative flex' >
         <motion.div
           initial={{ width: '100%' }}

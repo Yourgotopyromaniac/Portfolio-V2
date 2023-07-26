@@ -60,7 +60,7 @@ const LoadingScreen = () => {
     <div className='top-0 left-0'>
       <motion.p
         animate={cover}
-        className='text-[#e6e6e6] text-[78px] font-extrabold font-bebas top-12 left-10 md:top-10 md:left-14 absolute z-20'>{`${progress}%`}</motion.p>
+        className='text-[#e6e6e6] text-[78px] font-extrabold font-bebas top-12 left-10 md:top-10 md:left-14 absolute z-[150]'>{`${progress}%`}</motion.p>
       <motion.div
         animate={{ display: 'none' }}
         transition={{ delay: 6 }}
@@ -72,12 +72,12 @@ const LoadingScreen = () => {
       <motion.div
           initial={{ height: '50%', opacity: 0 }}
           animate={reveal}
-          className='absolute origin-bottom top-0 z-10 left-0 w-full bg-[#e6e6e6]' layout></motion.div>
+          className='absolute origin-bottom top-0 z-[130] left-0 w-full bg-[#e6e6e6]' layout></motion.div>
 
         <motion.div
           initial={{ height: '50%', opacity: 0 }}
           animate={reveal}
-          className='absolute origin-top bottom-0 z-10 left-0 w-full bg-[#e6e6e6]' layout></motion.div>
+          className='absolute origin-top bottom-0 z-[130] left-0 w-full bg-[#e6e6e6]' layout></motion.div>
     </div>
   )
 }

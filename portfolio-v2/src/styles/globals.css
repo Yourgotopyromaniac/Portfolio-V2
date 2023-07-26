@@ -10,14 +10,6 @@
     user-select: none;
 }
 
-@layer utilities {
-    .nav-dot{
-        background-color: black;
-        height: 4px;
-        width: 48px;
-        border: 1px solid #ff3333;
-    }
-}
 
 body{
     background-color: black;
