@@ -10,3 +10,15 @@
     user-select: none;
 }
 
+
+@layer utilities
+{
+    .menu-bar{
+        background-color: #090909;
+        height: 6px;
+        width: 48px;
+        border: 1px solid #eb4d4d;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+    }
+}

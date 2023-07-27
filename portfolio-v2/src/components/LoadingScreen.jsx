@@ -33,7 +33,7 @@ const LoadingScreen = () => {
   useEffect(() => {
     reveal.start({
       opacity: 1,
-      transition: { duration: 0, delay: 6 }
+      transition: { duration: 0, delay: 5.8 }
     }).then(() => {
       reveal.start({
         height: 0,
@@ -57,7 +57,7 @@ const LoadingScreen = () => {
 
 
   return (
-    <div className='top-0 left-0'>
+    <div className='absolute top-0 left-0 z-40'>
       <motion.p
         animate={cover}
         className='text-[#e6e6e6] text-[78px] font-extrabold font-bebas top-12 left-10 md:top-10 md:left-14 absolute z-[150]'>{`${progress}%`}</motion.p>
@@ -72,12 +72,12 @@ const LoadingScreen = () => {
       <motion.div
           initial={{ height: '50%', opacity: 0 }}
           animate={reveal}
-          className='absolute origin-bottom top-0 z-[130] left-0 w-full bg-[#e6e6e6]' layout></motion.div>
+          className='fixed origin-bottom top-0 z-[30] left-0 w-full bg-[#e6e6e6]' layout></motion.div>
 
         <motion.div
           initial={{ height: '50%', opacity: 0 }}
           animate={reveal}
-          className='absolute origin-top bottom-0 z-[130] left-0 w-full bg-[#e6e6e6]' layout></motion.div>
+          className='fixed origin-top bottom-0 z-[30] left-0 w-full bg-[#e6e6e6]' layout></motion.div>
     </div>
   )
 }

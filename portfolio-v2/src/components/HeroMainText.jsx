@@ -12,7 +12,7 @@ const HeroMainText = () => {
           animate={{ width: 0 }}
           transition={{ duration: 0.8, delay: 7, ease: easeInOut }}
           layout
-          className='absolute w-full h-1/2 self-end top-0 origin-left bg-[#090909] mix-blend-multiply'></motion.div>
+          className='absolute w-full h-1/2 self-end top-0 origin-left bg-[#090909] '></motion.div>
         <motion.div
           initial={{ width: '100%' }}
           animate={{ width: 0 }}
@@ -28,7 +28,7 @@ const HeroMainText = () => {
           animate={{ height: 0 }}
           transition={{ duration: 0.8, delay: 7.2, ease: easeInOut }}
           layout
-          className='absolute w-full h-full origin-top self-end bg-[#090909] mix-blend-multiply'></motion.div>
+          className='absolute w-full h-full origin-top self-end bg-[#090909] '></motion.div>
         <div className='flex gap-4'><span>and I build</span> </div></div>
 
       <div className='relative flex h-1/4' >
