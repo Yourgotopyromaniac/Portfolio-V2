@@ -85,19 +85,19 @@ const Home = () => {
         </div>
       </nav>
 
-      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0 }} className='bg-[#eb4d4d] fixed border-[#050505] border-b-2 z-[10] top-0 h-[25vh] w-full '></motion.div>
-      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.1 }} className='bg-[#eb4d4d] fixed border-[#050505] border-b-2 z-[10] top-[25vh] h-[25vh] w-full'></motion.div>
-      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.2 }} className='bg-[#eb4d4d] fixed border-[#050505] border-b-2 z-[10] top-[50vh] h-[25vh] w-full'></motion.div>
-      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.3 }} className='bg-[#eb4d4d] fixed border-[#050505] border-b-2 z-[10] top-[75vh] h-[25vh] w-full'></motion.div>
+      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0 }} className='bg-[#f24141] fixed border-[#050505] border-b-2 z-[10] top-0 h-[25vh] w-full '></motion.div>
+      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.1 }} className='bg-[#f24141] fixed border-[#050505] border-b-2 z-[10] top-[25vh] h-[25vh] w-full'></motion.div>
+      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.2 }} className='bg-[#f24141] fixed border-[#050505] border-b-2 z-[10] top-[50vh] h-[25vh] w-full'></motion.div>
+      <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.3 }} className='bg-[#f24141] fixed border-[#050505] border-b-2 z-[10] top-[75vh] h-[25vh] w-full'></motion.div>
 
 
 
-      <nav onClick={handleTheme} className={`flex items-center overflow-hidden fixed z-[20] bottom-8 left-8 transition-all duration-1000 ease-in-out justify-center rounded-[50%] border-[2px] border-[#eb4d4d] w-[35px] h-[35px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
-        <div className={`flex flex-col items-center relative top-[16px] transition-all duration-500 ease-in-out gap-2 w-[25px] ${isDark ? 'rotate-0' : 'rotate-180'}  `}>
-          <div>
-            <Image width={20} height={20} src={moon} alt="moon icon" />
+      <nav onClick={handleTheme} className={`flex items-center overflow-hidden fixed z-[20] bottom-8 left-8 transition-all duration-1000 ease-in-out justify-center rounded-[50%] border-[2px] border-[#f24141] w-[35px] h-[35px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
+        <div className={`flex flex-col items-center relative transition-all duration-500 ease-in-out w-[25px]`}>
+          <div className = {`absolute -top-[0.6rem] transition-all ease-in-out duration-300 ${isDark? ' translate-y-0' : 'translate-y-7'}`}>
+            <Image width={20} height={20} src={moon} alt="moon icon"  />
           </div>
-          <div>
+          <div className = {`absolute top-4 transition-all ease-in-out duration-300 ${isDark? ' translate-y-0' : '-translate-y-[1.8rem]'}`}>
             <Image width={25} height={25} src={sun} alt="sun icon" />
           </div>
         </div>

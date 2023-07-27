@@ -37,7 +37,7 @@ const HeroMainText = () => {
           animate={{ width: 0 }}
           transition={{ duration: 0.8, delay: 7.2, ease: easeInOut }}
           layout
-          className='absolute origin-left right-0 bottom-0 h-1/2 bg-[#090909]'></motion.div>
+          classNname='absolute origin-left right-0 bottom-0 h-1/2 bg-[#090909]'></motion.div>
         <motion.div
           initial={{ width: '100%' }}
           animate={{ width: 0 }}

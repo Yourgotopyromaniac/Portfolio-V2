@@ -84,7 +84,7 @@ const HeroMainTag = () => {
           className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
       </div>
-      <motion.span className='text-[#eb4d4d]'>{tagText}</motion.span>
+      <motion.span className='text-[#f24141]'>{tagText}</motion.span>
     </div>
   )
 }
