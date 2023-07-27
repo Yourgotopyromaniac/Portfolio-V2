@@ -92,7 +92,7 @@ const Home = () => {
 
 
 
-      <nav onClick={handleTheme} className={`flex items-center overflow-hidden fixed z-[20] bottom-8 left-8 transition-all duration-1000 ease-in-out justify-center rounded-[50%] border-[2px] border-[#f24141] w-[35px] h-[35px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
+      <nav onClick={handleTheme} className={`flex items-center overflow-hidden fixed z-[20] bottom-8 left-8 transition-all duration-300 ease-in-out justify-center rounded-[50%] border-[2px] border-[#f24141] w-[35px] h-[35px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
         <div className={`flex flex-col items-center relative transition-all duration-500 ease-in-out w-[25px]`}>
           <div className = {`absolute -top-[0.6rem] transition-all ease-in-out delay-300 duration-300 ${isDark? ' translate-y-0' : 'translate-y-7'}`}>
             <Image width={20} height={20} src={moon} alt="moon icon"  />
