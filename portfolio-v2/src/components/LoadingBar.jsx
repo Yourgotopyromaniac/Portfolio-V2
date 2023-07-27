@@ -44,7 +44,7 @@ const LoadingBar = () => {
 
 
         <motion.div
-          initial={{ height: '2vh', opacity : 1 }}
+          initial={{ height: '7vh', opacity : 1 }}
           animate={loadBar}
           style={{
             width: `${progress}%`,

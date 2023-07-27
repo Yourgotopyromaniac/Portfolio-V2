@@ -49,9 +49,9 @@ const Home = () => {
       <AnimatedCursor
         color="235,77, 77"
         innerSize={8}
-        outerSize={35}
-        innerScale={1}
-        outerScale={1.7}
+        outerSize={25}
+        innerScale={1.5}
+        outerScale={2.5}
         outerStyle={{
           backgroundColor: "rgba(230,230,230,0.9)",
 
@@ -94,10 +94,10 @@ const Home = () => {
 
       <nav onClick={handleTheme} className={`flex items-center overflow-hidden fixed z-[20] bottom-8 left-8 transition-all duration-1000 ease-in-out justify-center rounded-[50%] border-[2px] border-[#f24141] w-[35px] h-[35px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
         <div className={`flex flex-col items-center relative transition-all duration-500 ease-in-out w-[25px]`}>
-          <div className = {`absolute -top-[0.6rem] transition-all ease-in-out duration-300 ${isDark? ' translate-y-0' : 'translate-y-7'}`}>
+          <div className = {`absolute -top-[0.6rem] transition-all ease-in-out delay-300 duration-300 ${isDark? ' translate-y-0' : 'translate-y-7'}`}>
             <Image width={20} height={20} src={moon} alt="moon icon"  />
           </div>
-          <div className = {`absolute top-4 transition-all ease-in-out duration-300 ${isDark? ' translate-y-0' : '-translate-y-[1.8rem]'}`}>
+          <div className = {`absolute top-4 transition-all ease-in-out delay-300 duration-300 ${isDark? ' translate-y-0' : '-translate-y-[1.8rem]'}`}>
             <Image width={25} height={25} src={sun} alt="sun icon" />
           </div>
         </div>
