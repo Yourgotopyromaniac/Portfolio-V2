@@ -29,7 +29,7 @@ const About = () => {
       <div className='w-[80%] md:ml-40 flex flex-col justify-center items-start text-start'>
         <h1 className='font-bebas text-[60px] md:text-[80px] mb-5 text-[#ff4040] font-semibold'>About Me</h1>
         <div className='flex flex-col w-[100%] md:w-[80%] uppercase leading-snug font-space font-extrabold text-[40px] md:text-[60px]'>
-          <div className='relative'>I'm a frontend developer
+          <div className='relative'>I&#39;m a frontend developer
             <motion.div style={{ width: scrWidth }} className={`absolute h-full transition-all duration-500 top-0 right-0 ${ isDark? 'bg-[rgba(9,9,9,0.95)]' : 'bg-[rgba(230,230,230,0.95)]'}`}></motion.div>
           </div>
           <div className='relative'> doloremque labore molestiae,
