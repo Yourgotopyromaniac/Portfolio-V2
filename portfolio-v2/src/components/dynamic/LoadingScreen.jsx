@@ -14,11 +14,12 @@ const LoadingScreen = () => {
     document.body.style.overflowY = 'hidden';
 
     const loadAnimComplete = setTimeout(() => {
-      document.body.style.overflowY = 'auto';
-    }, 3000)
+      document.body.style.overflowY = 'scroll';
+      document.body.style.overflowX = 'hidden';
+    }, 7000)
 
     return () => clearTimeout(loadAnimComplete);
-  })
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -45,7 +46,7 @@ const LoadingScreen = () => {
   useEffect(() => {
     cover.start({
       color: '#050505',
-      transition: { duration: 0.5, delay: 5.1 },
+      transition: { duration: 0.5, delay: 4.5 },
     }).then(() => {
       cover.start({
         x: -200,

@@ -1,6 +1,5 @@
 import { motion, easeInOut } from 'framer-motion';
-import '@fontsource/bebas-neue';
-import HeroMainTag from './HeroMainTag';
+import HeroMainTag from '../dynamic/HeroMainTag';
 import { useSelector } from 'react-redux';
 
 const HeroMainText = () => {
@@ -8,7 +7,7 @@ const HeroMainText = () => {
   const isDark = useSelector((state) => state.theme.isDark);
 
   return (
-    <div className='text-[90px] flex flex-col items-start md:items-center justify-center h-full leading-tight gap-0 md:text-[120px] w-[75%] font-bebas text-start md:text-center z-[8]'>
+    <div className='text-[90px] flex flex-col items-start md:items-center justify-center h-full leading-tight gap-0 md:text-[140px] w-[80%] font-bebas font-extrabold text-start md:text-center z-[8]'>
       <div className='relative flex' >
         <motion.div
           initial={{ width: '100%' }}

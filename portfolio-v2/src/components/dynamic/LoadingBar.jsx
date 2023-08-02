@@ -10,12 +10,17 @@ const LoadingBar = () => {
 
   useEffect(() => {
     loadBar.start({
-      height: '100vh', 
-      transition : { duration: 1, delay: 4 }
+      width : '100vw',
+      transition : {type: 'keyframes' ,duration : 4}
     }).then(() => {
       loadBar.start({
-        display : 'none',
-        transition: { duration: 0, delay: 1}
+        height: '100vh', 
+        transition : { duration: 1 },
+      }).then(()=>{
+        loadBar.start({
+          display : 'none',
+          transition: { duration: 0, delay: 1}
+        })
       });
     })
   }, [loadBar]);
@@ -46,9 +51,8 @@ const LoadingBar = () => {
         <motion.div
           initial={{ height: '7vh', opacity : 1 }}
           animate={loadBar}
-          style={{
-            width: `${progress}%`,
-            transition: '0.2s ease-in-out',
+          style={{ 
+            width: '0vw',
             background: '#e6e6e6',
           }}
           layout

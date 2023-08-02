@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useDispatch, useSelector } from "react-redux";
-import { toggleTheme } from "../store/themeSlice";
+import { useSelector } from "react-redux";
 
 const HeroMainTag = () => {
 
@@ -10,13 +9,8 @@ const HeroMainTag = () => {
   const order = [0, 1, 2, 3, 4];
   let tagDelay;
   let tagInterval;
-  const dispatch = useDispatch();
   const isDark = useSelector((state) => state.theme.isDark);
 
-  const handleTheme = () => {
-    dispatch(toggleTheme());
-    console.log(isDark);
-  }
 
   useEffect(() => {
     tagDelay = setTimeout(() => {
@@ -84,7 +78,7 @@ const HeroMainTag = () => {
           className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
       </div>
-      <motion.span className='text-[#f24141]'>{tagText}</motion.span>
+      <motion.span className='text-[#ff4040]'>{tagText}</motion.span>
     </div>
   )
 }
