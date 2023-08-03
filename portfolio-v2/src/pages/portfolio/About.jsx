@@ -41,7 +41,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='w-[100%] my-24 border-t-[10px] border-b-[10px] border-[#ff4040]'>
+      <div className='w-[100%] my-24 border-t-[8px] border-b-[8px] border-[#ff4040]'>
         <Marquee className='font-bebas font-bold text-[45px] md:text-[75px] p-8' speed={120} pauseOnClick play>
           <div className='mr-8'>NextJS</div>
           <div className='mr-8'>·</div>
