@@ -31,7 +31,7 @@ const HeroMainText = () => {
           transition={{ duration: 0.8, delay: 7.2, ease: easeInOut }}
           layout
           className={`absolute w-full h-full origin-top self-end ${isDark? 'bg-[#090909]' : 'bg-[#e6e6e6]'}`}></motion.div>
-        <div className='flex gap-4'><span>and I build</span> </div></div>
+        <div className='flex gap-4'><h1 className='ml-2'>and I build</h1> </div></div>
 
       <div className='relative flex h-1/4' >
         <HeroMainTag /></div>

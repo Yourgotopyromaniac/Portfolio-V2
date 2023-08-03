@@ -11,7 +11,7 @@ const CustomCursor = () => {
             innerSize={10}
             outerSize={35}
             innerScale={1.5}
-            outerScale={0}
+            outerScale={2.5}
             outerStyle={{
                 backgroundColor: "rgba(230,230,230,0.9)",
                 mixBlendMode: 'exclusion'
@@ -26,6 +26,7 @@ const CustomCursor = () => {
                 'label[for]',
                 'select',
                 'textarea',
+                'h1',
                 'button',
                 '.link',
                 'nav'

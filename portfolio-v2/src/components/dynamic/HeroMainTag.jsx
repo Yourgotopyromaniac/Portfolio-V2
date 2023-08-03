@@ -40,45 +40,45 @@ const HeroMainTag = () => {
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8.3 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8.7 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8.1 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8.4 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8.2 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8.5 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
         <motion.div
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: 8.6 }}
-          className={` transition-all duration-500 ease-in-out ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+          className={`${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
         </motion.div>
       </div>
-      <motion.span className='text-[#ff4040]'>{tagText}</motion.span>
+      <motion.h1 className='text-[#ff4040]'>{tagText}</motion.h1>
     </div>
   )
 }

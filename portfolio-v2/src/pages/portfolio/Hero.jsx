@@ -7,7 +7,7 @@ const Hero = () => {
     const { scrollYProgress } = useScroll();
     const scrollPacity = useTransform(
         scrollYProgress,
-        [0,0.5],
+        [0,0.2],
         [1,0]
     )
 
