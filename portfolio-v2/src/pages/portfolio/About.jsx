@@ -117,7 +117,7 @@ const About = () => {
             <ScrollTextMask />
           </div>
 
-          <div className='relative'> creating accesibility-rich, engaging
+          <div className='relative'> creating accesible, engaging
             <ScrollTextMask />
           </div>
 

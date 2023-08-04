@@ -11,7 +11,7 @@ const TagTextMask = ({delay}) => {
         <motion.div
             animate={{ opacity: [0, 1, 1, 0] }}
             transition={{ duration: 2, times: [0, 0, 1, 1], repeat: Infinity, repeatDelay: 1, delay: delay }}
-            className={`w-full h-full ${isDark ? 'bg-[#090909]' : 'bg-[#e4e4e4]'}`}>
+            className={`w-full h-full ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>
         </motion.div>
     )
 }

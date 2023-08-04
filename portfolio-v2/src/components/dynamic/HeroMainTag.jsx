@@ -20,7 +20,7 @@ const HeroMainTag = () => {
           return order[nextIndex];
         });
       }, 3000);
-    }, 6000);
+    }, 12000);
 
     return () => {
       clearTimeout(tagDelay);
