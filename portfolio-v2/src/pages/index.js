@@ -6,8 +6,6 @@ import NavBar from "@/components/toggles/NavBar";
 import CustomCursor from "@/components/dynamic/CustomCursor";
 import ThemeSwitch from "@/components/toggles/ThemeSwitch";
 import About from "./portfolio/About";
-import Pitstop from "@/components/masks/Pitstop";
-import Projects from "./portfolio/Projects";
 
 const Home = () => {
 
@@ -21,7 +19,6 @@ const Home = () => {
       <LoadingScreen/>
       <Hero/>
       <About/>
-      <Pitstop/>
       <DateTime />
       <ThemeSwitch/>
       <NavBar/>
