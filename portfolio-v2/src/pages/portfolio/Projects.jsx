@@ -1,42 +1,43 @@
-"use client"
-import { motion } from 'framer-motion';
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
+import { useLayoutEffect } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
-
-    const main = useRef();
+    const projRef = useRef(null);
 
     useLayoutEffect(() => {
         const ctx = gsap.context((self) => {
-            const boxes = self.selector('.box');
-            boxes.forEach((box) => {
-                gsap.to(box, {
-                    scale: 4,
-                    scrollTrigger: {
-                        trigger: box,
-                        start: 'top center',
-                        end: 'bottom top',
-                        scrub: true,
-                        markers: true,
-                    },
-                });
+            const box = self.selector('.box');
+
+            gsap.to(box, {
+                x: "-800vw",
+                scrollTrigger: {
+                    trigger: box,
+                    start: 'top 10%',
+                    scrub: true,
+                    pin: true,
+                    refreshPriority: 'lowest', // Prioritize updates during the next animation frame
+                },
             });
-        }, main); // <- Scope!
-        return () => ctx.revert(); // <- Cleanup!
+        }, projRef);
+        return () => ctx.revert();
     }, []);
 
     return (
-        <div className='h-screen w-screen z-50' ref={main}>
-
-            <div className='relative h-full w-full flex items-center justify-center'>
-                <div className=''></div>
+        <div ref={projRef} className='w-screen h-screen flex items-center'>
+            <div className='box left-96 h-screen w-[800vw] flex items-center gap-80' style={{ willChange: 'transform' }}>
+                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
+                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
+                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
+                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
+                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;

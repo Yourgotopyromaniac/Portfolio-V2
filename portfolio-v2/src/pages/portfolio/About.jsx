@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useState } from 'react';
 import Image from 'next/image';
 import ScrollTextMask from '@/components/masks/ScrollTextMask';
 import Marquee from 'react-fast-marquee';
 import '@fontsource-variable/space-grotesk'
 import thanos from '@/assets/thanos.gif'
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 
 
 const About = () => {
+  const aboutRef = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: aboutRef,
+    offset: ["center end", "end center"]
+  });
 
-
+  const scRslow = useTransform(
+    scrollYProgress,
+    [0,1],
+    [0,100]
+  )
   const [isHovered, setIsHovered] = useState(false);
 
   const HandleHover = () => {
@@ -19,14 +29,14 @@ const About = () => {
 
 
   return (
-    <div className='w-full py-40 flex flex-col justify-center items-center'>
+    <motion.div  className='w-full py-40  flex flex-col justify-center items-center'>
       <div className='w-[90%] md:w-[100%] md:pl-36 md:ml-20 flex flex-col justify-center items-start text-start'>
-        <h1 className='font-bebas text-[50px] md:text-[80px] mb-5 text-[#ff4040] font-semibold'>Me, Myskills & I</h1>
+        <h1 className='font-bebas text-[50px] md:text-[80px] mb-5 text-[#ff3e3e] font-semibold'>Me, Myskills & I</h1>
         <div className='flex flex-col w-[100%] md:w-[100%] uppercase leading-snug font-space font-medium text-[30px] md:text-[50px]'>
           <div className='relative'>I&#39;m a frontend engineer with
             <ScrollTextMask />
           </div>
-          <div className='relative'>3 years of experience
+          <div className='relative'>4 years of experience
             <ScrollTextMask />
           </div>
           <div className='relative'>building higly perfomant,
@@ -41,7 +51,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='w-[100%] my-24 border-t-[8px] border-b-[8px] border-[#ff4040]'>
+      <div className='w-[100%] my-24 border-t-[8px] border-b-[8px] border-[#ff3e3e]'>
         <Marquee className='font-bebas font-bold text-[45px] md:text-[75px] p-8' speed={120} pauseOnClick play>
           <div className='mr-8'>NextJS</div>
           <div className='mr-8'>·</div>
@@ -127,7 +137,7 @@ const About = () => {
         </div>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

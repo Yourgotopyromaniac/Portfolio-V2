@@ -23,7 +23,7 @@ const DateTime = () => {
 
     return (
         <div className='font-bebas text-md flex flex-col gap-2 fixed z-10 bottom-8 right-8'>
-            <div className='text-[#ff4040]' suppressHydrationWarning>{formattedTime}</div>
+            <div className='text-[#ff3e3e]' suppressHydrationWarning>{formattedTime}</div>
             <div suppressHydrationWarning>{formattedDate}</div>
         </div>
     )

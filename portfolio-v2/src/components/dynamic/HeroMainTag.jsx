@@ -46,7 +46,7 @@ const HeroMainTag = () => {
       <TagTextMask delay={8.5}/>
       <TagTextMask delay={8.6}/>
       </div>
-      <motion.h1 className='text-[#ff4040]'>{tagText}</motion.h1>
+      <motion.h1 className='text-[#ff3e3e]'>{tagText}</motion.h1>
     </div>
   )
 }
