@@ -32,11 +32,25 @@
     transition: 0.3s all ease-in-out;
   }
 
-  .box {
-    scroll-snap-type: x mandatory;
+  .backdrop {
+    background-color: rgba(20, 20, 20, 0.5);
+    backdrop-filter: blur(20px);
   }
 
-  .box-child {
-    scroll-snap-align: center;
+  .projects {
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+  }
+
+  .projects::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .projects::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .projects::-webkit-scrollbar-thumb {
+    background-color: transparent;
   }
 }

@@ -33,7 +33,7 @@ const NavBar = () => {
             <nav className='fixed z-[20] top-14 right-8'>
                 <div onClick={handleToggle} className='flex flex-col gap-2'>
                     <span className={`menu-bar ${isOpen ? 'rotate-45' : ''}`} ></span>
-                    <span className={`menu-bar ${isOpen ? 'rotate-[315deg] -top-[14px]' : ''}`}></span>
+                    <span className={`menu-bar ${isOpen ? '-rotate-45  translate-y-[-14px] ' : ''}`}></span>
                 </div>
             </nav>
 

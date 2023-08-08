@@ -1,43 +1,49 @@
-import React, { useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
-import { useLayoutEffect } from 'react';
-
-gsap.registerPlugin(ScrollTrigger);
+import React from 'react'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
-    const projRef = useRef(null);
+  return (
+    <div className='relative w-screen h-[100vh] flex justify-center items-center'>
+      <div className='absolute rotate-90 w-[120vh] text-[20rem] md:rotate-0 md:w-full leading-[0] font-bebas font-extrabold md:text-[25rem] flex gap-2'>
+        <span className='w-[12.5%]'>P</span>
+        <span className='w-[12.5%]'>R</span>
+        <span className='w-[12.5%]'>O</span>
+        <span className='w-[12.5%]'>J</span>
+        <span className='w-[12.5%]'>E</span>
+        <span className='w-[12.5%]'>C</span>
+        <span className='w-[12.5%]'>T</span>
+        <span className='w-[12.5%]'>S</span>
+      </div>
 
-    useLayoutEffect(() => {
-        const ctx = gsap.context((self) => {
-            const box = self.selector('.box');
+      <motion.div
+        style={{ scrollSnapType: 'x mandatory'}}
+        initial={{ width: 0}}
+        whileInView={{ width: '90%' }}
+        transition={{ duration: 0.5, delay: 1.5, type: 'keyframes' }}
+        className='border-4 backdrop projects border-[#ff4040] origin-center flex h-[90%] w-0 flex-nowrap items-center gap-28 overflow-x-scroll z-10'>
 
-            gsap.to(box, {
-                x: "-800vw",
-                scrollTrigger: {
-                    trigger: box,
-                    start: 'top 10%',
-                    scrub: true,
-                    pin: true,
-                    refreshPriority: 'lowest', // Prioritize updates during the next animation frame
-                },
-            });
-        }, projRef);
-        return () => ctx.revert();
-    }, []);
 
-    return (
-        <div ref={projRef} className='w-screen h-screen flex items-center'>
-            <div className='box left-96 h-screen w-[800vw] flex items-center gap-80' style={{ willChange: 'transform' }}>
-                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
-                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
-                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
-                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
-                <div className='w-[100vw] box-child h-[60%] bg-[#ff3e3e]'></div>
-            </div>
-        </div>
-    );
-};
+        <div
+          style={{ scrollSnapAlign: 'center' }}
+          className='md:h-[95%] md:w-[70%] h-[75%] w-[90%] bg-black flex-none mx-10'></div>
 
-export default Projects;
+        <div
+          style={{ scrollSnapAlign: 'center' }}
+          className='md:h-[95%] md:w-[70%] h-[75%] w-[90%]  bg-black flex-none mx-10'></div>
+
+        <div
+          style={{ scrollSnapAlign: 'center' }}
+          className='md:h-[95%] md:w-[70%] h-[75%] w-[90%] bg-black flex-none mx-10'></div>
+
+        <div
+          style={{ scrollSnapAlign: 'center' }}
+          className='md:h-[95%] md:w-[70%] h-[75%] w-[90%] bg-black flex-none mx-10'></div>
+
+
+
+      </motion.div>
+    </div>
+  )
+}
+
+export default Projects

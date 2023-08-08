@@ -16,7 +16,7 @@ const LoadingScreen = () => {
     const loadAnimComplete = setTimeout(() => {
       document.body.style.overflowY = 'scroll';
       document.body.style.overflowX = 'hidden';
-    }, 12000)
+    }, 7000)
 
     return () => clearTimeout(loadAnimComplete);
   }, [])
@@ -24,9 +24,9 @@ const LoadingScreen = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (progress < 100) {
-        setProgress((prevProgress) => prevProgress + 1);
+        setProgress((prevProgress) => prevProgress + 2);
       }
-    }, 64);
+    }, 50);
 
     return () => clearInterval(interval);
   }, [progress]);
@@ -34,11 +34,11 @@ const LoadingScreen = () => {
   useEffect(() => {
     reveal.start({
       opacity: 1,
-      transition: { duration: 0, delay: 12 }
+      transition: { duration: 0, delay: 5.8 }
     }).then(() => {
       reveal.start({
         height: 0,
-        transition: { duration: 2, delay: 0, ease: easeInOut }
+        transition: { duration: 1, delay: 0, ease: easeInOut }
       });
     });
   }, [reveal]);
@@ -46,12 +46,12 @@ const LoadingScreen = () => {
   useEffect(() => {
     cover.start({
       color: '#050505',
-      transition: { duration: 0.5, delay: 9 },
+      transition: { duration: 0.5, delay: 4.5 },
     }).then(() => {
       cover.start({
         x: -200,
         opacity: 0,
-        transition: { duration: 0.5, delay: 2.5 },
+        transition: { duration: 0.5, delay: 0.5 },
       });
     });
   }, [cover]);
@@ -64,7 +64,7 @@ const LoadingScreen = () => {
         className='text-[#d6d6d6] text-[78px] font-extrabold font-bebas top-14 left-16 md:top-14 md:left-18 absolute z-[150]'>{`${progress}%`}</motion.p>
       <motion.div
         animate={{ display: 'none' }}
-        transition={{ delay: 12 }}
+        transition={{ delay: 6 }}
         className='bg-[#050505] h-[100vh] w-[100vw] flex flex-col py-0 px-0 font-bold justify-center relative'>
 
         <LoadingBar />
