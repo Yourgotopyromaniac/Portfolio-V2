@@ -22,7 +22,9 @@ const Home = () => {
       <CustomCursor />
       <LoadingScreen />
       <Hero />
+      <Pitstop/>
       <About />
+      <Pitstop/>
       <Projects/>
       <DateTime />
       <ThemeSwitch />

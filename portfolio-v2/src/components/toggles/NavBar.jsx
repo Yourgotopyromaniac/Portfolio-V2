@@ -37,10 +37,10 @@ const NavBar = () => {
                 </div>
             </nav>
 
-            <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0 }} className='bg-[#ff3e3e] fixed z-[10] top-0 h-[25vh] w-full '></motion.div>
-            <motion.div variants={variants} initial="closed2" animate={isOpen ? "open2" : "closed2"} transition={{ duration: 0.2, delay: 0.1 }} className='bg-[#ff3e3e] fixed z-[10] top-[25vh] h-[25vh] w-full'></motion.div>
-            <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.2 }} className='bg-[#ff3e3e] fixed z-[10] top-[50vh] h-[25vh] w-full'></motion.div>
-            <motion.div variants={variants} initial="closed2" animate={isOpen ? "open2" : "closed2"} transition={{ duration: 0.2, delay: 0.3 }} className='bg-[#ff3e3e] fixed z-[10] top-[75vh] h-[25vh] w-full'></motion.div></>
+            <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0 }} className='bg-[#ff3e3e] fixed z-[15] top-0 h-[25vh] w-full '></motion.div>
+            <motion.div variants={variants} initial="closed2" animate={isOpen ? "open2" : "closed2"} transition={{ duration: 0.2, delay: 0.1 }} className='bg-[#ff3e3e] fixed z-[15] top-[25vh] h-[25vh] w-full'></motion.div>
+            <motion.div variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.2 }} className='bg-[#ff3e3e] fixed z-[15] top-[50vh] h-[25vh] w-full'></motion.div>
+            <motion.div variants={variants} initial="closed2" animate={isOpen ? "open2" : "closed2"} transition={{ duration: 0.2, delay: 0.3 }} className='bg-[#ff3e3e] fixed z-[15] top-[75vh] h-[25vh] w-full'></motion.div></>
     )
 }
 

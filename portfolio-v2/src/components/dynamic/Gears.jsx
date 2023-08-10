@@ -13,7 +13,7 @@ const Gears = () => {
     const scRotate2 = useTransform(
         scrollYProgress,
         [0, 1],
-        [-30, -360]
+        [-30, -60]
     )
     const spring1 = useSpring(scRotate, {
         stiffness: 100,
@@ -31,7 +31,7 @@ const Gears = () => {
     const isDark = useSelector((state) => state.theme.isDark);
     return (
         <div className='fixed w-full h-screen z-0'>
-            <motion.svg className='w-[700px] h-[700px] absolute -top-96 left-0' style={{ rotate: spring1 }} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill={`${isDark ? 'rgba(230,230,230,0.02)' : 'rgba(9,9,9,0.07)'}`}>
+            <motion.svg className='w-[400px] lg:w-[600px] absolute top-[-20%] left-[0%]  md:top-[8%] md:left-[-25%]' style={{ rotate: spring1 }} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill={`${isDark ? 'rgba(230,230,230,0.02)' : 'rgba(9,9,9,0.07)'}`}>
                 <path strokeWidth="16px" d="M20.017 14.669L23 13.564l-.012-3.208-2.996-1.085a8.455 8.455 0
                     0 0-.437-1.05l1.329-2.893-2.277-2.26-2.886 1.351a8.396 8.396 0
                     0 0-1.052-.436L13.564 1l-3.208.012-1.085 2.996a8.485 8.485 0 0 
@@ -50,7 +50,7 @@ const Gears = () => {
                     1-.384.927l-.212.43zM12 7.2a4.8 4.8 0 1 0 4.8 4.8A4.8 4.8 0 0 0 12 7.2zm0
                     8.6a3.8 3.8 0 1 1 3.8-3.8 3.804 3.804 0 0 1-3.8 3.8z" />
             </motion.svg>
-            <motion.svg className='w-[700px] h-[700px] absolute -bottom-96 left-0' style={{ rotate: spring2 }} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill={`${isDark ? 'rgba(230,230,230,0.02)' : 'rgba(9,9,9,0.07)'}`}>
+            <motion.svg className='w-[400px] lg:w-[600px] absolute bottom-[-20%] right-[0%] md:top-[8%] md:right-[-25%]' style={{ rotate: spring2 }} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill={`${isDark ? 'rgba(230,230,230,0.02)' : 'rgba(9,9,9,0.07)'}`}>
                 <path strokeWidth="16px" d="M20.017 14.669L23 13.564l-.012-3.208-2.996-1.085a8.455 8.455 0
                     0 0-.437-1.05l1.329-2.893-2.277-2.26-2.886 1.351a8.396 8.396 0
                     0 0-1.052-.436L13.564 1l-3.208.012-1.085 2.996a8.485 8.485 0 0 
@@ -69,6 +69,7 @@ const Gears = () => {
                     1-.384.927l-.212.43zM12 7.2a4.8 4.8 0 1 0 4.8 4.8A4.8 4.8 0 0 0 12 7.2zm0
                     8.6a3.8 3.8 0 1 1 3.8-3.8 3.804 3.804 0 0 1-3.8 3.8z" />
             </motion.svg>
+
         </div>
     )
 }

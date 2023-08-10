@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource-variable/material-symbols-outlined": "^5.0.7",
     "@fontsource-variable/space-grotesk": "^5.0.5",
     "@fontsource/bebas-neue": "^5.0.5",
     "@fontsource/space-grotesk": "^5.0.5",
