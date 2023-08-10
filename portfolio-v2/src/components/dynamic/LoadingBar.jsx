@@ -31,7 +31,7 @@ const LoadingBar = () => {
       <motion.div
         className='flex flex-col items-start gap-4 relative w-full' layout>
         <motion.div
-          initial={{ height: '7vh', opacity: 1 }}
+          initial={{ height: '5vh', opacity: 1 }}
           animate={loadBar}
           style={{
             width: '0vw',

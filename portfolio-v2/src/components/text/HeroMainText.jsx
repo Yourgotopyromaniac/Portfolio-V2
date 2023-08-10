@@ -21,7 +21,7 @@ const HeroMainText = () => {
       </div>
 
       <div className='relative classname flex h-1/4' >
-        <motion.h1 className=' text-[#ff4040]' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 6.9 }} >websites
+        <motion.h1 className=' text-[#ff4040]' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 6.9 }} ><HeroMainTag/>
         </motion.h1>
       </div>
 

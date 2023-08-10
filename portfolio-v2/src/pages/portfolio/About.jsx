@@ -81,11 +81,11 @@ const About = () => {
           <AboutSlice text="I always stay up to date on by" />
           <AboutSlice text="constantly adding new" />
           <AboutSlice text="technologies to my skillset." />
-          <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 3, duration: 0.5 }} onMouseOver={HandleHover} onMouseLeave={HandleHover} className='relative'>kinda like thanos collecting infinity stones.
+          <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 3, duration: 0.5 }} onMouseOver={HandleHover} onMouseLeave={HandleHover} className='relative mb-8'>kinda like thanos collecting infinity stones.
             <Image src={thanos}
-              width={200}
+              width={150}
               alt='loop'
-              className='absolute bottom-[100%] right-10 lg:right-96 rotate-12 z-10'
+              className='absolute bottom-[100%] w-[100px] lg:w-[150px] right-0 lg:right-20 rotate-12 z-10'
             />
           </motion.div>
 

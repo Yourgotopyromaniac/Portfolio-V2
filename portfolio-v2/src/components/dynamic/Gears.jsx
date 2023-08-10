@@ -13,7 +13,7 @@ const Gears = () => {
     const scRotate2 = useTransform(
         scrollYProgress,
         [0, 1],
-        [-30, -60]
+        [-30, -120]
     )
     const spring1 = useSpring(scRotate, {
         stiffness: 100,

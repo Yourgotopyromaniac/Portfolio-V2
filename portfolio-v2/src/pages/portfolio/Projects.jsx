@@ -9,45 +9,49 @@ const Projects = () => {
     {
       imgClass: 'projectrad',
       name: 'radioadspread',
-      stack: 'ReactJS, ChakraUI, GraphQL',
+      stack: 'ReactJS, ChakraUI, GraphQL.',
       bgColor: 'from-[#004643] via-[#004643]',
       textColor: 'text-[#f99b28]',
       desc: 'RadioAdSpread is an online platorm facilitating a marketplace for ad services via radio.',
       border: 'border-[#f99b28]',
-      background: 'bg-[#004643]'
+      background: 'bg-[#004643]',
+      link: 'https://radioadspread.com'
     },
 
     {
       imgClass: 'projectsu',
       name: 'Worker Registry',
-      stack: 'NextJS, TypeScript, SCSS ',
+      stack: 'NextJS, TypeScript, SCSS.',
       bgColor: 'from-[#f5f5f5] via-[#f5f5f5]',
       textColor: 'text-[#0071bb]',
-      desc: 'A worker registry application for Space Universe Africa',
+      desc: 'A worker registry search application for Space Universe Africa.',
       border: 'border-[#050505]',
-      background: 'bg-[#f5f5f5]'
+      background: 'bg-[#f5f5f5]',
+      link: 'worker-registry.vercel.app'
     },
 
     {
       imgClass: 'projectula',
       name: 'ulesawards',
-      stack: 'NextJS, Typescript, Tailwind',
+      stack: 'NextJS, Typescript, Redux, Tailwind.',
       bgColor: 'from-[#141414] via-[#141414]',
       textColor: 'text-[#c7291f]',
       desc: 'fully functional voting platform for the ULES dinner awards.',
       border: 'border-[#c7291f]',
-      background: 'bg-[#141414]'
+      background: 'bg-[#141414]',
+      link: 'https://ulesawards.tech'
     },
 
     {
       imgClass: 'projecth4e',
       name: 'Hack4Earth',
-      stack: 'HTML, SCSS, JavaScript',
+      stack: 'HTML, SCSS, JavaScript.',
       bgColor: 'from-[#f2f2f2] via-[#f2f2f2]',
       textColor: 'text-[#72319B]',
-      desc: 'The official website for the Hack4Earth hackathon fully built by me.',
-      border: 'border-[#72319B]',
-      background: 'bg-[#f2f2f2]'
+      desc: 'The official website for the Hack4Earth hackathon.',
+      border: 'border-[#c8ff00]',
+      background: 'bg-[#f2f2f2]',
+      link: 'hack4earth.vercel.app'
     }
   ]
 
@@ -62,13 +66,12 @@ const Projects = () => {
         initial={{ width: 0 }}
         whileInView={{ width: '90%' }}
         transition={{ duration: 0.5, delay: 1.5 }}
-        viewport={{ once: true }}
         layout
         className='border-4 backdrop  border-[#ff4040] origin-center flex h-[95%] z-10'>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 2 }}
+          transition={{ duration: 0.5, delay: 2.5 }}
           style={{ scrollSnapType: 'x mandatory' }}
           className='flex-nowrap projects items-center flex  gap-28 overflow-x-scroll h-full'>
           {projectData.map((project, index) => (

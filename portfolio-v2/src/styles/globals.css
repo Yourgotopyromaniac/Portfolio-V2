@@ -78,4 +78,11 @@
     background-image: url('../assets/h4e.PNG');
     background-size: cover;
   }
+
+  .typed-cursor {
+    display: inline-block; /* Make it inline with the text */
+    vertical-align: text-bottom; /* Adjust vertical alignment */
+    width: 0.1em; /* Adjust the width of the cursor */
+    height: 1em; /* Adjust the height of the cursor */
+  }
 }
