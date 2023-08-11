@@ -11,15 +11,15 @@
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff3e3e;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #090909;
+  background-color: transparent;
 }
 
 @layer utilities {
@@ -27,7 +27,7 @@
     background-color: #090909;
     height: 6px;
     width: 48px;
-    border: 1px solid #ff3e3e;
+    border: 1px solid;
     position: relative;
     transition: 0.3s all ease-in-out;
   }
@@ -58,31 +58,63 @@
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(4, 200, 16, 0.6252626050420168) 35%, rgba(3, 164, 8, 1) 63%, rgba(24, 139, 3, 1) 78%, rgba(2, 95, 36, 1) 85%, rgba(2, 71, 27, 1) 92%, rgba(0, 0, 0, 1) 100%);
   }
-  .projectrad
-  {
+
+  .projectrad {
     background-image: url('../assets/radd.PNG');
     background-size: cover;
   }
-  .projectula
-  {
+
+  .projectula {
     background-image: url('../assets/ula.PNG');
     background-size: cover;
   }
-  .projectsu
-  {
+
+  .projectsu {
     background-image: url('../assets/suu.PNG');
     background-size: cover;
   }
-  .projecth4e
-  {
+
+  .projecth4e {
     background-image: url('../assets/h4e.PNG');
     background-size: cover;
   }
 
-  .typed-cursor {
-    display: inline-block; /* Make it inline with the text */
-    vertical-align: text-bottom; /* Adjust vertical alignment */
-    width: 0.1em; /* Adjust the width of the cursor */
-    height: 1em; /* Adjust the height of the cursor */
+
+  @media (min-width: 640px) and (max-width: 767px) {
+    .landscape-short {
+      height: 95%;
+    }
+
+    .landscape-tight {
+      height: 70%;
+    }
+
+    .landscape-small {
+      font-size: 20rem;
+    }
   }
+
+  /* Custom styles for screens below 350px */
+  @media (max-width: 350px) {
+    .hero-sm {
+      font-size: 70px;
+    }
+
+    .header-sm {
+      font-size: 50px;
+    }
+
+    .about-sm {
+      font-size: 20px;
+    }
+
+    .project-header-sm {
+      font-size: 25px;
+    }
+
+    .project-sm {
+      font-size: 15px;
+    }
+  }
+
 }

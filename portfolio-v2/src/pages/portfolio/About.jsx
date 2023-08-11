@@ -5,22 +5,15 @@ import Marquee from 'react-fast-marquee';
 import '@fontsource-variable/space-grotesk'
 import thanos from '@/assets/thanos.gif'
 import AboutSlice from '@/components/text/AboutSlice';
-import { motion, useScroll, useTransform } from 'framer-motion';
-
+import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
 
 
 const About = () => {
-  const aboutRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: aboutRef,
-    offset: ["center end", "end center"]
-  });
+  const selectedAccentColor = useSelector(
+    (state) => state.accent.selectedAccentColor
+  );
 
-  const scRslow = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0, 100]
-  )
   const [isHovered, setIsHovered] = useState(false);
 
   const HandleHover = () => {
@@ -32,9 +25,9 @@ const About = () => {
     <motion.div className='w-full py-40  flex flex-col justify-center items-center'>
       <div className='w-[90%] lg:w-[100%] lg:pl-36 lg:ml-20 flex flex-col justify-center items-start text-start'>
 
-        <h1 className='font-bebas text-[60px] md:text-[90px] mb-5 text-[#ff3e3e] z-10 font-semibold'>Me, Myskills & I</h1>
+        <h1 style={{color : selectedAccentColor}} className='font-bebas text-[60px] lg:text-[90px] mb-5 header-sm z-10 font-semibold'>Me, Myskills & I</h1>
 
-        <div className='flex flex-col w-[100%] md:w-[100%] uppercase leading-snug font-space font-medium text-[30px] md:text-[50px]'>
+        <div className='flex flex-col w-[100%] md:w-[100%] about-sm uppercase leading-snug font-space font-medium text-[30px] lg:text-[50px]'>
           <AboutSlice text="I'm a Frontend Engineer with" />
           <AboutSlice text="4 years of experience" />
           <AboutSlice text="building higly perfomant," />
@@ -43,8 +36,8 @@ const About = () => {
         </div>
 
       </div>
-      <div className='w-[100%] my-24 z-10 border-t-[10px] border-b-[10px] border-[#ff3e3e]'>
-        <Marquee className='font-bebas font-bold text-[55px] md:text-[95px] p-8' speed={200} pauseOnClick play>
+      <div style={{borderColor: selectedAccentColor}} className='w-[100%] my-24 z-10 border-t-[10px] border-b-[10px]'>
+        <Marquee className='font-bebas font-bold text-[55px] lg:text-[95px] p-8' speed={200} pauseOnClick play>
           <div className='mr-8'>NextJS</div>
           <div className='mr-8'>·</div>
           <div className='mr-8'>Typescript</div>
@@ -73,7 +66,7 @@ const About = () => {
       </div>
 
       <div className='w-[90%] lg:w-[100%] lg:pl-36 lg:ml-20 flex flex-col justify-center items-start text-start'>
-        <div className='flex flex-col w-[100%] md:w-[100%] uppercase leading-snug font-space font-medium text-[30px] md:text-[50px]'>
+        <div className='flex flex-col w-[100%] md:w-[100%] about-sm uppercase leading-snug font-space font-medium text-[30px] lg:text-[50px]'>
 
           <AboutSlice text="I have a solid understanding" />
           <AboutSlice text="of frontend design patterns" />

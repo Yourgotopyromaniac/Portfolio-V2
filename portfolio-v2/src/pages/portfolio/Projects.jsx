@@ -1,9 +1,14 @@
 import React from 'react'
-import { color, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import ProjectCard from '@/components/text/ProjectCard'
-
+import { useSelector } from 'react-redux'
 
 const Projects = () => {
+
+  const selectedAccentColor = useSelector(
+    (state) => state.accent.selectedAccentColor
+  );
+
 
   const projectData = [
     {
@@ -58,20 +63,20 @@ const Projects = () => {
   return (
     <div className='relative w-screen h-[100vh] mt-36 flex justify-center items-center'>
       <div className='absolute rotate-90 w-[120vh] lg:rotate-0 md:w-full leading-[0] font-bebas font-extrabold md:text-[25rem] flex justify-center items-center gap-2'>
-        <h1 className='tracking-wide text-[25rem]'>PROJECTS</h1>
+        <h1 className='tracking-wide landscape-small text-[25rem]'>PROJECTS</h1>
       </div>
 
       <motion.div
-
+        style={{ borderColor: selectedAccentColor }}
         initial={{ width: 0 }}
         whileInView={{ width: '90%' }}
-        transition={{ duration: 0.5, delay: 1.5 }}
+        transition={{ duration: 0.3, delay: 1.5 }}
         layout
-        className='border-4 backdrop  border-[#ff4040] origin-center flex h-[95%] z-10'>
+        className='border-4 backdrop  origin-center flex h-[95%] z-10'>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 2.5 }}
+          transition={{ duration: 0.5, delay: 2.8 }}
           style={{ scrollSnapType: 'x mandatory' }}
           className='flex-nowrap projects items-center flex  gap-28 overflow-x-scroll h-full'>
           {projectData.map((project, index) => (

@@ -7,11 +7,11 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 const CustomCursor = () => {
     return (
         <AnimatedCursor
-            color="235,77, 77"
+            color="90,90, 90"
             innerSize={10}
             outerSize={35}
-            innerScale={1.5}
-            outerScale={2.5}
+            innerScale={0.8}
+            outerScale={3.5}
             outerStyle={{
                 backgroundColor: "rgba(230,230,230,0.9)",
                 mixBlendMode: 'exclusion'
