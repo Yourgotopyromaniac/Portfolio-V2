@@ -16,8 +16,9 @@ const Home = () => {
   return (
 
     <div className={`w-[100vw] relative flex-nowrap h-full overflow-x-hidden ${isDark ? 'bg-[#090909] text-[#d6d6d6]' : 'bg-[#d6d6d6] text-[#090909]'}  `}>
-      <div className={`w-full fixed top-0 z-[29] h-[10vh] ${isDark ? 'better-linear-gradient-top' : 'bg-transparent'} `}></div>
-      <div className={`w-full fixed bottom-0 z-[29] h-[10vh] ${isDark ? 'better-linear-gradient-bottom' : 'bg-transparent'}`}></div>
+      <div className={`w-full fixed top-0 z-[29] h-[15vh] ${isDark ? 'better-linear-gradient-top' : 'bg-transparent'} `}></div>
+      <div className={`w-full fixed bottom-0 z-[29] h-[15vh] ${isDark ? 'better-linear-gradient-bottom' : 'bg-transparent'}`}></div>
+      <Gears/>
       <CustomCursor />
       <LoadingScreen />
       <Hero />

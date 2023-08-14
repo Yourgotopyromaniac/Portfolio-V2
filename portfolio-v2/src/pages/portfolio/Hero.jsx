@@ -1,16 +1,24 @@
 import React, { useRef } from 'react'
 import HeroMainText from '@/components/text/HeroMainText'
-import { useSelector } from 'react-redux'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 
 const Hero = () => {
-    
-    const isDark = useSelector((state) => state.theme.isDark);
+    const heroRef = useRef(null)
+    const { scrollYProgress } = useScroll({
+        target: heroRef,
+        offset: ["end end", "end center"]
+    });
+    const scrollPacity = useTransform(
+        scrollYProgress,
+        [0,1],
+        [1,0]
+    )
 
     return (
-        <div className={`relative top-0 flex flex-col w-full h-[100vh] flex-none z-[15] items-center justify-center ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>
+        <motion.div ref={heroRef} style={{ opacity: scrollPacity }} className='relative top-0 flex flex-col w-full h-[100vh] flex-none z-[15] items-center justify-center'>
             <HeroMainText />
-        </div>
+        </motion.div>
     )
 }
 

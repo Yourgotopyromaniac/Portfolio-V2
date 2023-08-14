@@ -12,7 +12,6 @@ const About = () => {
   const selectedAccentColor = useSelector(
     (state) => state.accent.selectedAccentColor
   );
-  const isDark = useSelector((state) => state.theme.isDark);
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -22,7 +21,7 @@ const About = () => {
 
 
   return (
-    <div style={{ scrollSnapAlign: 'center' }} className={`w-full relative py-20 z-[15] flex flex-col ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'} justify-center items-center flex-none`}>
+    <div style={{ scrollSnapAlign: 'center' }} className='w-full relative py-20 z-[15] flex flex-col justify-center items-center flex-none'>
       <div className='w-[90%] lg:w-[90%] lg:pl-16 lg:ml-8 flex flex-col justify-center items-start text-start relative'>
 
         <h1 style={{ color: selectedAccentColor }} className='font-bebas text-[60px] lg:text-[90px] mb-5 header-sm z-10 font-semibold'>Me, Myskills & I</h1>
