@@ -47,6 +47,16 @@
     backdrop-filter: blur(15px);
   }
 
+  .better-linear-gradient-top {
+    background: rgb(9, 9, 9);
+    background: linear-gradient(180deg, rgba(9, 9, 9, 1) 0%, rgba(9, 9, 9, 0.75) 25%, rgba(9, 9, 9, 0.5) 50%, rgba(9, 9, 9, 0.25) 75%, rgba(9, 9, 9, 0) 100%);
+  }
+
+  .better-linear-gradient-bottom {
+    background: rgb(9, 9, 9);
+    background: linear-gradient(0deg, rgba(9, 9, 9, 1) 0%, rgba(9, 9, 9, 0.75) 25%, rgba(9, 9, 9, 0.5) 50%, rgba(9, 9, 9, 0.25) 75%, rgba(9, 9, 9, 0) 100%);
+  }
+
   .projects {
     scrollbar-width: thin;
     scrollbar-color: transparent;
@@ -134,15 +144,15 @@
       font-size: 25px;
     }
 
-    .project-bg-sm{
-      font-size: 20rem ;
+    .project-bg-sm {
+      font-size: 20rem;
     }
 
     .project-sm {
       font-size: 15px;
     }
 
-    .circle-width{
+    .circle-width {
       width: 600vw;
       height: 600vw;
     }

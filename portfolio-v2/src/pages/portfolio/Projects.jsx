@@ -63,7 +63,7 @@ const Projects = () => {
   const isDark = useSelector((state) => state.theme.isDark);
 
   return (
-    <div style={{ scrollSnapAlign: 'center' }} className={`relative flex-none z-[20] w-screen h-[150vh] ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'} mt-60 flex justify-center items-center`}>
+    <div style={{ scrollSnapAlign: 'center' }} className={`relative flex-none z-[20] w-screen h-[150vh] ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'} mt-80 flex justify-center items-center`}>
       <div className='absolute rotate-90 w-[120vh] landscape-rotate md:rotate-0 md:w-full leading-[0] font-bebas font-extrabold md:text-[25rem] flex justify-center items-center gap-2'>
         <h1 className='tracking-wide landscape-small project-bg-sm text-[25rem]'>PROJECTS</h1>
       </div>

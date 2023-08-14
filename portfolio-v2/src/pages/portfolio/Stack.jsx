@@ -21,8 +21,8 @@ const Stack = () => {
                 style={{ backgroundColor: selectedAccentColor }} className='lg:h-[200vw] h-[500vw] lg:w-[200vw] w-[500vw] z-[10] circle-width absolute top-[50%] left-[50%] rounded-[50%]' >
             </motion.div >
 
-            <div className='w-[95%] md:h-full flex lg:flex-row items-center flex-col gap-10 z-[12]'>
-                <motion.div initial={{ lineHeight: 0 }} whileInView={{ lineHeight: 0.5 }} transition={{ delay: 1.8, duration: 0.8, ease: easeInOut }} viewport={{ once: true }} className={`flex flex-col items-center justify-center h-full w-full md:w-1/2 exon-outline font-medium text-[180px] landscape-small lg:text-[240px] ${isDark ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>
+            <div className='w-[95%] flex lg:flex-row items-center flex-col gap-10 z-[12]'>
+                <motion.div initial={{ lineHeight: 0 }} whileInView={{ lineHeight: 0.5 }} transition={{ delay: 1.8, duration: 0.8, ease: easeInOut }} viewport={{ once: true }} className={`flex flex-col items-center justify-center w-full md:w-1/2 exon-outline font-medium text-[180px] landscape-small lg:text-[240px] ${isDark ? 'text-[#090909]' : 'text-[#d6d6d6]'}`} layout>
                     <h1>Stack</h1>
                     <h1>Stack</h1>
                     <h1 className='exon-regular'>Stack</h1>
