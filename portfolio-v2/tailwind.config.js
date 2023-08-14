@@ -12,7 +12,7 @@ module.exports = {
     fontFamily: {
       'bebas': ['Bebas Neue', 'sans-serif'],
       'space' : ['Space Grotesk Variable', 'sans-serif'],
-      'material' : ['Material Symbols Outlined Variable', 'sans-serif']
+      'houzeFont' : ['houzeFont', 'sans-serif']
     }
   },
   plugins: [],

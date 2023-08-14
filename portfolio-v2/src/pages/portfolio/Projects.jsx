@@ -60,23 +60,25 @@ const Projects = () => {
     }
   ]
 
+  const isDark = useSelector((state) => state.theme.isDark);
+
   return (
-    <div className='relative w-screen h-[100vh] mt-36 flex justify-center items-center'>
-      <div className='absolute rotate-90 w-[120vh] lg:rotate-0 md:w-full leading-[0] font-bebas font-extrabold md:text-[25rem] flex justify-center items-center gap-2'>
-        <h1 className='tracking-wide landscape-small text-[25rem]'>PROJECTS</h1>
+    <div style={{ scrollSnapAlign: 'center' }} className={`relative flex-none z-[20] w-screen h-[150vh] ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'} mt-60 flex justify-center items-center`}>
+      <div className='absolute rotate-90 w-[120vh] landscape-rotate md:rotate-0 md:w-full leading-[0] font-bebas font-extrabold md:text-[25rem] flex justify-center items-center gap-2'>
+        <h1 className='tracking-wide landscape-small project-bg-sm text-[25rem]'>PROJECTS</h1>
       </div>
 
       <motion.div
         style={{ borderColor: selectedAccentColor }}
-        initial={{ width: 0 }}
-        whileInView={{ width: '90%' }}
-        transition={{ duration: 0.3, delay: 1.5 }}
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        transition={{ duration: 0.3, delay: 1 }}
         layout
-        className='border-4 backdrop  origin-center flex h-[95%] z-10'>
+        className='border-4 backdrop  origin-center flex h-[65%] w-[90%] z-10'>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 2.8 }}
+          transition={{ duration: 0.5, delay: 2 }}
           style={{ scrollSnapType: 'x mandatory' }}
           className='flex-nowrap projects items-center flex  gap-28 overflow-x-scroll h-full'>
           {projectData.map((project, index) => (

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'ExonOutline';
+  src: url('/fonts/ExonOutline.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ExonRegular';
+  src: url('/fonts/ExonRegular.otf') format('opentype');
+}
+
 * {
   -webkit-user-select: none;
   /* Safari */
@@ -79,6 +89,13 @@
     background-size: cover;
   }
 
+  .exon-outline {
+    font-family: 'ExonOutline', sans-serif;
+  }
+
+  .exon-regular {
+    font-family: 'ExonRegular', sans-serif;
+  }
 
   @media (min-width: 640px) and (max-width: 767px) {
     .landscape-short {
@@ -92,6 +109,11 @@
     .landscape-small {
       font-size: 20rem;
     }
+
+    .landscape-rotate {
+      transform: rotate(0);
+    }
+
   }
 
   /* Custom styles for screens below 350px */
@@ -112,8 +134,17 @@
       font-size: 25px;
     }
 
+    .project-bg-sm{
+      font-size: 20rem ;
+    }
+
     .project-sm {
       font-size: 15px;
+    }
+
+    .circle-width{
+      width: 600vw;
+      height: 600vw;
     }
   }
 

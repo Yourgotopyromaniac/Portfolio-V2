@@ -1,0 +1,51 @@
+import React from 'react'
+import { useSelector } from 'react-redux'
+import { easeInOut, motion, useAnimation } from 'framer-motion';
+import StackItem from '@/components/text/StackItem';
+
+const Stack = () => {
+
+    const selectedAccentColor = useSelector(
+        (state) => state.accent.selectedAccentColor
+    );
+    const isDark = useSelector((state) => state.theme.isDark);
+
+    return (
+        <div style={{ scrollSnapAlign: 'center', background: 'transparent' }} className={`w-screen py-16 my-10 relative z-[10] flex justify-center items-center`}>
+            
+            <motion.div
+                initial={{ scale: 0, translate: '-50% -50%' }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 0.5, duration: 0.8, ease: easeInOut }}
+                viewport={{ once: true }}
+                style={{ backgroundColor: selectedAccentColor }} className='lg:h-[200vw] h-[500vw] lg:w-[200vw] w-[500vw] z-[10] circle-width absolute top-[50%] left-[50%] rounded-[50%]' >
+            </motion.div >
+
+            <div className='w-[95%] md:h-full flex lg:flex-row items-center flex-col gap-10 z-[12]'>
+                <motion.div initial={{ lineHeight: 0 }} whileInView={{ lineHeight: 0.5 }} transition={{ delay: 1.8, duration: 0.8, ease: easeInOut }} viewport={{ once: true }} className={`flex flex-col items-center justify-center h-full w-full md:w-1/2 exon-outline font-medium text-[180px] landscape-small lg:text-[240px] ${isDark ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>
+                    <h1>Stack</h1>
+                    <h1>Stack</h1>
+                    <h1 className='exon-regular'>Stack</h1>
+                    <h1>Stack</h1>
+                    <h1>Stack</h1>
+                </motion.div>
+
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 3 }} viewport={{ once: true }} className={`lg:w-1/2 w-full relative py-10 flex flex-wrap items-center justify-center gap-0 ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>
+                    <div className='w-full px-4 md:px-10 font-bebas flex flex-col gap-0' >
+                        <StackItem align='' title='Programming Languages' items={['Typescript', 'Javascript', 'HTML']} rotate={90}/>
+                        <StackItem align='items-end' title='Frameworks' items={['NextJS', 'ReactJS']} reverse='flex-row-reverse' rotate={-90} />
+                        <StackItem align='' title='Styling systems' items={['Tailwind', 'SCSS/SASS', 'CSS', 'Bootstrap']} rotate={90} />
+                        <StackItem align='items-end' title='Animation libraries' items={['Framer Motion', 'GSAP']} reverse='flex-row-reverse' rotate={-90} />
+                        <StackItem align='' title='Tools' items={['Redux - State Management', 'D3JS - Data Visualization', 'Graphql - Data Querying']}  rotate={90}/>
+                    </div>
+
+                </motion.div>
+            </div>
+
+        </div>
+
+
+    )
+}
+
+export default Stack
