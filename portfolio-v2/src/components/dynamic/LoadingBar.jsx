@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { easeInOut, motion, useAnimation } from 'framer-motion';
 
 
 const LoadingBar = () => {
@@ -10,11 +10,11 @@ const LoadingBar = () => {
   useEffect(() => {
     loadBar.start({
       width: '100vw',
-      transition: { type: 'keyframes', duration: 4 }
+      transition: { type: 'keyframes', duration: 4, ease: easeInOut }
     }).then(() => {
       loadBar.start({
         height: '100vh',
-        transition: { duration: 1 },
+        transition: { duration: 1, type: 'keyframes', ease: easeInOut },
       }).then(() => {
         loadBar.start({
           display: 'none',
@@ -27,9 +27,9 @@ const LoadingBar = () => {
 
 
   return (
-    <div className='relative w-full h-full flex items-center justify-start'>
+    <div className='w-full h-full flex items-center'>
       <motion.div
-        className='flex flex-col items-start gap-4 relative w-full' layout>
+        className='flex flex-col items-start' layout>
         <motion.div
           initial={{ height: '5vh', opacity: 1 }}
           animate={loadBar}

@@ -15,7 +15,7 @@ const TypingAnimation = () => {
         const typed = new Typed('.typing-effect', options);
 
         return () => {
-            typed.destroy(); // Cleanup when the component unmounts
+            typed.destroy();
         };
     }, []);
 

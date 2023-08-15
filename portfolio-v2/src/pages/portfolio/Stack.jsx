@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
-import { easeIn, easeInOut, easeOut, motion, useAnimation } from 'framer-motion';
+import { circIn, motion } from 'framer-motion';
 import StackItem from '@/components/text/StackItem';
-import { useInView } from 'framer-motion';
 
 const Stack = () => {
     const selectedAccentColor = useSelector(
@@ -12,30 +11,29 @@ const Stack = () => {
 
 
     return (
-        <div style={{ scrollSnapAlign: 'center', background: 'transparent' }} className={`w-screen py-16 my-10 relative z-[30] flex justify-center items-center`}>
+        <div className='w-screen py-16 my-10 relative z-[30] flex justify-center items-center'>
 
             <motion.div
-                initial={{ scale: 0, translate: '-50% -50%' }}
+                initial={{ scaleY: 0}}
                 whileInView={{
-                    scale: 1,
-                    borderRadius: 0
+                    scaleY: 1
                 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5, duration: 0.4, ease: easeIn }}
-                style={{ backgroundColor: selectedAccentColor }} className='w-full h-full z-[10] circle-width absolute top-[50%] left-[50%] rounded-[50%]' >
+                transition={{ delay: 0.5, duration: 1, ease: circIn, type: 'keyframes' }}
+                style={{ backgroundColor: selectedAccentColor }} className='w-full h-full z-[10] origin-top absolute top-0 left-0' >
             </motion.div >
 
             <div className='w-[95%] flex lg:flex-row items-center flex-col gap-10 z-[12]'>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.5 }} viewport={{ once: true }} className={`flex flex-col my-40 relative items-center justify-center w-full md:w-1/2 exon-outline font-medium text-[180px] landscape-small lg:text-[240px] ${isDark ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 220 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 110 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.5, type: 'keyframes' }} viewport={{ once: true }} className={`flex flex-col my-40 relative items-center justify-center w-full md:w-1/2 exon-outline font-medium text-[180px] landscape-small lg:text-[240px] ${isDark ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 220 }} viewport={{ once: true }} transition={{ delay: 1.2, duration: 0.5, type: 'keyframes' }} className='absolute top-0'>Stack</motion.h1>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 110 }} viewport={{ once: true }} transition={{ delay: 1.2, duration: 0.5, type: 'keyframes' }} className='absolute top-0'>Stack</motion.h1>
                     <h1 className='exon-regular'>Stack</h1>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -110 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -220 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -110 }} viewport={{ once: true }} transition={{ delay: 1.2, duration: 0.5, type: 'keyframes' }} className='absolute top-0'>Stack</motion.h1>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -220 }} viewport={{ once: true }} transition={{ delay: 1.2, duration: 0.5, type: 'keyframes' }} className='absolute top-0'>Stack</motion.h1>
                 </motion.div>
 
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 3 }} viewport={{ once: true }} className={`lg:w-1/2 w-full relative py-10 md:my-0 flex flex-wrap items-center justify-center gap-0 ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>
-                    <div className='w-full px-4 md:px-10 font-bebas flex flex-col gap-0' >
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1.2 }} viewport={{ once: true }} className={`lg:w-1/2 w-full py-10 md:my-0 flex flex-wrap items-center justify-center ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>
+                    <div className='w-full px-4 md:px-10 flex flex-col gap-0' >
                         <StackItem align='' title='Programming Languages' items={['Typescript', 'Javascript', 'HTML']} rotate={90} />
                         <StackItem align='items-end' title='Frameworks' items={['NextJS', 'ReactJS']} reverse='flex-row-reverse' rotate={-90} />
                         <StackItem align='' title='Styling systems' items={['Tailwind', 'SCSS/SASS', 'CSS', 'Bootstrap']} rotate={90} />

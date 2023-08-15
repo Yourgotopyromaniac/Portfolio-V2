@@ -10,15 +10,15 @@ const HeroMainText = () => {
   );
 
   return (
-    <div className='text-[90px] hero-sm flex flex-col items-start md:items-center justify-center h-full  leading-tight gap-0 lg:text-[160px] w-[80%] font-bebas font-extrabold text-start md:text-center z-[8]'>
+    <div className='text-[90px] hero-sm flex flex-col items-start md:items-center justify-center h-full  leading-tight lg:text-[160px] w-[80%] font-bebas font-extrabold text-start md:text-center z-[8]'>
       <div className='relative flex' >
-        <motion.h1 initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 6.5 }} >I&#39;m Biola,
+        <motion.h1 initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 6.5, type: 'keyframes' }} >I&#39;m Biola,
         </motion.h1>
       </div>
 
       <div className='relative flex' >
         <div className='flex gap-4'>
-          <motion.h1 initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 6.7 }} >and I build
+          <motion.h1 initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 7, type: 'keyframes' }} >and I build
           </motion.h1>
         </div>
       </div>
@@ -26,7 +26,7 @@ const HeroMainText = () => {
       <div className='relative classname flex h-1/4' >
         <motion.h1 style={{
           color : selectedAccentColor
-        }} className='flex' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 6.9 }} ><HeroMainTag />
+        }} className='flex' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 7.5, type: 'keyframes' }} ><HeroMainTag />
         </motion.h1>
       </div>
 

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import LoadingBar from './LoadingBar'
 import { easeInOut, motion, useAnimation } from 'framer-motion'
-import '@fontsource/bebas-neue';
 
 const LoadingScreen = () => {
 
@@ -38,7 +37,7 @@ const LoadingScreen = () => {
     }).then(() => {
       reveal.start({
         height: 0,
-        transition: { duration: 1, delay: 0, ease: easeInOut }
+        transition: { duration: 1, delay: 0, ease: easeInOut, type: 'keyframes' }
       });
     });
   }, [reveal]);
@@ -51,7 +50,7 @@ const LoadingScreen = () => {
       cover.start({
         x: -200,
         opacity: 0,
-        transition: { duration: 0.5, delay: 0.5 },
+        transition: { duration: 0.5, delay: 0.5, type: 'keyframes' },
       });
     });
   }, [cover]);
@@ -61,11 +60,11 @@ const LoadingScreen = () => {
     <div className='fixed top-0 left-0 z-40'>
       <motion.p
         animate={cover}
-        className='text-[#d6d6d6] text-[78px] font-extrabold font-bebas top-14 left-16 md:top-14 md:left-18 absolute z-[150]'>{`${progress}%`}</motion.p>
+        className='text-[#d6d6d6] text-[90px] font-extrabold font-bebas top-14 left-16 md:top-14 md:left-18 absolute z-[150]'>{`${progress}%`}</motion.p>
       <motion.div
         animate={{ display: 'none' }}
         transition={{ delay: 6 }}
-        className='bg-[#050505] h-[100vh] w-[100vw] flex flex-col py-0 px-0 font-bold justify-center relative'>
+        className='bg-[#050505] h-[100vh] w-[100vw] flex flex-col justify-center'>
 
         <LoadingBar />
       </motion.div>

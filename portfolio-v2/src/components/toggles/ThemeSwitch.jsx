@@ -1,5 +1,3 @@
-import moon from "@/assets/moon2.svg";
-import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../store/themeSlice";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -7,7 +5,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 
 const ThemeSwitch = () => {
 
-  const {scrollYProgress} = useScroll();
+  const { scrollYProgress } = useScroll();
   const scaleY = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
@@ -26,12 +24,14 @@ const ThemeSwitch = () => {
   return (
     <div className='flex flex-col items-center fixed z-[35] bottom-8 left-8 gap-8'>
       <div className='w-[1px] h-[150px] bg-[#181818] flex flex-col items-center'>
-        <motion.div style={{backgroundColor: selectedAccentColor, scaleY}} className='w-[2px] h-[150px] origin-top'></motion.div>
+        <motion.div style={{ backgroundColor: selectedAccentColor, scaleY }} className='w-[2px] h-[150px] origin-top'></motion.div>
       </div>
       <nav style={{ borderColor: selectedAccentColor }} onClick={handleTheme} className={`flex items-center overflow-hidden transition-all delay-300 duration-300 ease-in-out justify-center rounded-[50%] border-[2px] w-[30px] h-[30px] ${isDark ? 'bg-[black]' : 'bg-[white]'} `}>
         <div className={`flex flex-col items-center relative transition-all duration-500 ease-in-out w-[20px]`}>
           <div className={`absolute -top-[0.5rem] transition-all ease-in-out delay-300 duration-300 ${isDark ? ' translate-y-0' : 'translate-y-7'}`}>
-            <Image width={15} height={15} src={moon} alt="moon icon" />
+            <svg width="15px" height="15px" viewBox="0 0 24 24" fill="#d6d6d6">
+              <path d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z" />
+            </svg>
           </div>
           <div className={`absolute top-4 transition-all ease-in-out delay-300 duration-300 ${isDark ? ' translate-y-0' : '-translate-y-[1.7rem]'}`}>
             <svg width="20px" height="20px" viewBox="0 0 1024 1024" fill="#000000" stroke="#000000">

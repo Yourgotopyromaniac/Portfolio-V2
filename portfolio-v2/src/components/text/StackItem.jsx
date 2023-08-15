@@ -11,11 +11,11 @@ const StackItem = ({ title, items, align, reverse, rotate }) => {
 
     return (
         <div className={`flex flex-col md:text-[25px] text-[18px] w-full ${align}`}>
-            <motion.h1 initial={{ y: 40, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.5 }} viewport={{ once: true }} style={{ color: selectedAccentColor }} className='text-[26px] md:text-[35px]'>{title}</motion.h1>
+            <motion.h1 initial={{ y: 30, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.5,  type:'keyframes'  }} viewport={{ once: true }} style={{ color: selectedAccentColor }} className='text-[26px] md:text-[35px]'>{title}</motion.h1>
             {items.map((item, index) => (
                 <motion.span
                     className={`flex items-center gap-2 ${reverse}`}
-                    initial={{ y: 40, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.5 }} viewport={{ once: true }}
+                    initial={{ y: 30, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.5,  type:'keyframes'  }} viewport={{ once: true }}
                     key={index}
                 >
                     <svg width="8px" height="8px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" transform={`rotate(${rotate})`}>

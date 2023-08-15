@@ -1,8 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import Image from 'next/image'
-import linkArrow from '@/assets/arrow.svg'
 
 const ProjectCard = ({ imgClass, name, color, textColor, background, bgColor, border, desc, stack, link }) => {
     return (

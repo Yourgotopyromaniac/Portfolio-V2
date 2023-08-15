@@ -67,8 +67,8 @@ const Projects = () => {
   const isDark = useSelector((state) => state.theme.isDark);
 
   return (
-    <div style={{ scrollSnapAlign: 'center' }} className='relative flex-none z-[20] w-screen h-[150vh] flex justify-center items-center'>
-      <div className='absolute rotate-90 w-[120vh] landscape-rotate md:rotate-0 md:w-full leading-[0] font-bebas font-extrabold md:text-[25rem] flex justify-center items-center gap-2'>
+    <div className='z-[20] h-[150vh] flex justify-center items-center'>
+      <div className='absolute rotate-90 w-[120vh] landscape-rotate md:rotate-0 md:w-full leading-[0] font-extrabold md:text-[25rem] flex justify-center items-center'>
         <h1 className='lg:tracking-wide md:tracking-[0] tracking-[0] landscape-small project-bg-sm md:text-[20rem] text-[25rem] lg:text-[25rem]'>PROJECTS</h1>
       </div>
 
@@ -76,15 +76,16 @@ const Projects = () => {
         style={{ borderColor: selectedAccentColor }}
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
-        transition={{ duration: 0.3, delay: 1 }}
+        transition={{ duration: 0.3, delay: 0.5, type: 'keyframes' }}
         layout
-        className='border-4 backdrop  origin-center flex h-[65%] w-[90%] z-10'>
+        className='border-4 origin-center h-[65%] w-[90%]'>
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 2 }}
+          transition={{ duration: 0.3, delay: 1, type: 'keyframes'}}
           style={{ scrollSnapType: 'x mandatory' }}
-          className='flex-nowrap projects items-center flex  gap-28 overflow-x-scroll h-full'>
+          className='flex-nowrap backdrop projects items-center flex gap-28 overflow-x-scroll h-full'>
           {projectData.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))
