@@ -27,11 +27,11 @@ const Stack = () => {
 
             <div className='w-[95%] flex lg:flex-row items-center flex-col gap-10 z-[12]'>
                 <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.5 }} viewport={{ once: true }} className={`flex flex-col my-40 relative items-center justify-center w-full md:w-1/2 exon-outline font-medium text-[180px] landscape-small lg:text-[240px] ${isDark ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 240 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 120 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 220 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: 110 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
                     <h1 className='exon-regular'>Stack</h1>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -120 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
-                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -240 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -110 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
+                    <motion.h1 initial={{ y: 0 }} whileInView={{ y: -220 }} viewport={{ once: true }} transition={{ delay: 1.8, duration: 0.5 }} className='absolute top-0'>Stack</motion.h1>
                 </motion.div>
 
                 <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 3 }} viewport={{ once: true }} className={`lg:w-1/2 w-full relative py-10 md:my-0 flex flex-wrap items-center justify-center gap-0 ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>

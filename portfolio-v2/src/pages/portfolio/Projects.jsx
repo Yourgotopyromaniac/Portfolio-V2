@@ -16,6 +16,7 @@ const Projects = () => {
       name: 'radioadspread',
       stack: 'ReactJS, ChakraUI, GraphQL.',
       bgColor: 'from-[#004643] via-[#004643]',
+      color : '#f99b28',
       textColor: 'text-[#f99b28]',
       desc: 'RadioAdSpread is an online platorm facilitating a marketplace for ad services via radio.',
       border: 'border-[#f99b28]',
@@ -28,6 +29,7 @@ const Projects = () => {
       name: 'Worker Registry',
       stack: 'NextJS, TypeScript, SCSS.',
       bgColor: 'from-[#f5f5f5] via-[#f5f5f5]',
+      color : '#0071bb',
       textColor: 'text-[#0071bb]',
       desc: 'A worker registry search application for Space Universe Africa.',
       border: 'border-[#050505]',
@@ -40,6 +42,7 @@ const Projects = () => {
       name: 'ulesawards',
       stack: 'NextJS, Typescript, Redux, Tailwind.',
       bgColor: 'from-[#141414] via-[#141414]',
+      color : '#c7291f',
       textColor: 'text-[#c7291f]',
       desc: 'fully functional voting platform for the ULES dinner awards.',
       border: 'border-[#c7291f]',
@@ -52,6 +55,7 @@ const Projects = () => {
       name: 'Hack4Earth',
       stack: 'HTML, SCSS, JavaScript.',
       bgColor: 'from-[#f2f2f2] via-[#f2f2f2]',
+      color : '#72319B',
       textColor: 'text-[#72319B]',
       desc: 'The official website for the Hack4Earth hackathon.',
       border: 'border-[#c8ff00]',
@@ -65,7 +69,7 @@ const Projects = () => {
   return (
     <div style={{ scrollSnapAlign: 'center' }} className='relative flex-none z-[20] w-screen h-[150vh] flex justify-center items-center'>
       <div className='absolute rotate-90 w-[120vh] landscape-rotate md:rotate-0 md:w-full leading-[0] font-bebas font-extrabold md:text-[25rem] flex justify-center items-center gap-2'>
-        <h1 className='tracking-wide landscape-small project-bg-sm text-[25rem]'>PROJECTS</h1>
+        <h1 className='lg:tracking-wide md:tracking-[0] tracking-[0] landscape-small project-bg-sm md:text-[20rem] text-[25rem] lg:text-[25rem]'>PROJECTS</h1>
       </div>
 
       <motion.div
@@ -78,7 +82,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 2 }}
+          transition={{ duration: 0.3, delay: 2 }}
           style={{ scrollSnapType: 'x mandatory' }}
           className='flex-nowrap projects items-center flex  gap-28 overflow-x-scroll h-full'>
           {projectData.map((project, index) => (
