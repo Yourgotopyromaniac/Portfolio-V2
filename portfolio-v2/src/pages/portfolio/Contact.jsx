@@ -19,34 +19,34 @@ const Contact = () => {
           <div style={{ backgroundColor: selectedAccentColor }} className='w-[120%] py-6 rotate-[8deg] relative top-60 z-[6] border-y-2 border-[#090909]'>
             <Marquee className='md:text-[70px] text-[50px] py-2 leading-tight w-full font-bold border-t-8 border-b-8 border-[#090909] text-[#090909]  font-bebas'>
               <h1 className='mr-16'>contact me</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>contact me</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>contact me</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>contact me</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16 '>contact me</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>contact me</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
             </Marquee>
           </div>
 
           <div style={{ backgroundColor: selectedAccentColor }} className='w-[120%] py-6 -rotate-[8deg] z-[5] border-y-2 border-[#090909]'>
             <Marquee className='md:text-[70px] text-[50px] py-2 leading-tightw-full font-bold border-t-8 border-b-8 border-[#090909] text-[#090909]  font-bebas' direction='right'>
               <h1 className='mr-16'>open to work</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>open to work</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>open to work</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>open to work</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16 '>open to work</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
               <h1 className='mr-16'>open to work</h1>
-              <h1 className='mr-16'>///</h1>
+              <h1 className='mr-16'>&#47;&#47;&#47;</h1>
             </Marquee>
           </div>
 
@@ -59,7 +59,7 @@ const Contact = () => {
             </motion.div></h1>
           <div className='flex flex-wrap w-full text-[40px] md:text-[50px]'>
               <ContactLink url='/' title='Linkedin'/>
-              <ContactLink url='/' title='Twitter'/>
+              <ContactLink url='/' title='X'/>
               <ContactLink url='/' title='Email'/>
 
           </div>
