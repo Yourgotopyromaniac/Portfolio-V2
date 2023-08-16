@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeAccentColor } from '@/store/accentSlice'
-import { useState } from 'react'
 
 const AccentSwitch = () => {
 
@@ -17,7 +16,7 @@ const AccentSwitch = () => {
 
 
     return (
-        <div className='flex gap-2 items-center absolute bottom-8 left-20'>
+        <div className='flex md:w-[68px] md:flex-wrap gap-2 items-center fixed bottom-8 left-20'>
             {availableAccentColors.map((color) => (
                 <motion.div
                     key={color}

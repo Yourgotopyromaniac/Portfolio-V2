@@ -54,7 +54,7 @@ const Contact = () => {
 
         <div className='flex flex-col w-[90%] leading-tight'>
           <h1 className='text-[90px] font-bold relative flex items-center gap-6'>You can reach me via
-            <motion.div initial={{ rotate: 0}} whileInView={{rotate: 135}} transition={{ duration: 0.5, type: 'spring'}} style={{ backgroundColor: selectedAccentColor }} className='w-[80px] absolute bottom-0 right-0 h-[80px] md:relative flex items-center justify-center rounded-[50%]'>
+            <motion.div initial={{ rotate: 0}} whileInView={{rotate: 135}} transition={{ duration: 0.5, delay: 0.5, type: 'spring'}} style={{ backgroundColor: selectedAccentColor }} className='w-[80px] absolute bottom-0 right-0 h-[80px] md:relative flex items-center justify-center rounded-[50%]'>
               <Image src={arrow} height={60} width={60} alt='arrow' />
             </motion.div></h1>
           <div className='flex flex-wrap w-full text-[40px] md:text-[50px]'>
