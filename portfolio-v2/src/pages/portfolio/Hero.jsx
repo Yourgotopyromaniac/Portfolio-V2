@@ -16,7 +16,7 @@ const Hero = () => {
     )
 
     return (
-        <motion.div ref={heroRef} style={{ opacity: scrollPacity }} className='top-0 flex flex-col w-full h-[100vh] items-center justify-center'>
+        <motion.div id='home' ref={heroRef} style={{ opacity: scrollPacity }} className='top-0 flex flex-col w-full h-[100vh] items-center justify-center'>
             <HeroMainText />
         </motion.div>
     )

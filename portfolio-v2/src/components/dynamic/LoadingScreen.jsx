@@ -25,7 +25,7 @@ const LoadingScreen = () => {
       if (progress < 100) {
         setProgress((prevProgress) => prevProgress + 2);
       }
-    }, 50);
+    }, 40);
 
     return () => clearInterval(interval);
   }, [progress]);
@@ -33,7 +33,7 @@ const LoadingScreen = () => {
   useEffect(() => {
     reveal.start({
       opacity: 1,
-      transition: { duration: 0, delay: 5.8 }
+      transition: { duration: 0, delay: 8.8 }
     }).then(() => {
       reveal.start({
         height: 0,
@@ -44,14 +44,8 @@ const LoadingScreen = () => {
 
   useEffect(() => {
     cover.start({
-      color: '#050505',
-      transition: { duration: 0.5, delay: 4.5 },
-    }).then(() => {
-      cover.start({
-        x: -200,
-        opacity: 0,
-        transition: { duration: 0.5, delay: 0.5, type: 'keyframes' },
-      });
+      opacity: 0,
+      transition: { duration: 0.5, delay: 3.6 },
     });
   }, [cover]);
 
@@ -60,10 +54,10 @@ const LoadingScreen = () => {
     <div className='fixed top-0 left-0 z-40'>
       <motion.p
         animate={cover}
-        className='text-[#d6d6d6] text-[90px] font-extrabold font-bebas top-14 left-16 md:top-14 md:left-18 absolute z-[150]'>{`${progress}%`}</motion.p>
+        className='text-[#d6d6d6] text-[90px] font-extrabold top-14 left-16 md:top-14 md:left-18 absolute z-[150]'>{`${progress}%`}</motion.p>
       <motion.div
         animate={{ display: 'none' }}
-        transition={{ delay: 6 }}
+        transition={{ delay: 9 }}
         className='bg-[#050505] h-[100vh] w-[100vw] flex flex-col justify-center'>
 
         <LoadingBar />

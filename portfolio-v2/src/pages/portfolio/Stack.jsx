@@ -19,7 +19,7 @@ const Stack = () => {
                     scaleY: 1
                 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.3, duration: 1, ease: circIn, type: 'keyframes' }}
+                transition={{ delay: 0.3, duration: 0.5, ease: circIn, type: 'keyframes' }}
                 style={{ backgroundColor: selectedAccentColor }} className='w-full h-full z-[10] origin-top absolute top-0 left-0' >
             </motion.div >
 

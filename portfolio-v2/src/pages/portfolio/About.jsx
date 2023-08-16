@@ -12,7 +12,7 @@ const About = () => {
   );
 
   return (
-    <div className='w-full py-20 flex flex-col items-center'>
+    <div id='about' className='w-full py-20 flex flex-col items-center'>
       <div className='w-[90%] lg:pl-16 lg:ml-8 flex flex-col justify-center items-start text-start'>
 
         <h1 style={{ color: selectedAccentColor }} className='text-[60px] lg:text-[90px] mb-5 header-sm font-semibold'>Me, Myskills & I</h1>

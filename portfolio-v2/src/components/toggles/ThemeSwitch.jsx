@@ -22,7 +22,7 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <div className='flex flex-col items-center fixed z-[35] bottom-8 left-8 gap-8'>
+    <div className='flex flex-col items-center fixed z-[30] bottom-8 left-8 gap-8'>
       <div className='w-[1px] h-[150px] bg-[#181818] flex flex-col items-center'>
         <motion.div style={{ backgroundColor: selectedAccentColor, scaleY }} className='w-[2px] h-[150px] origin-top'></motion.div>
       </div>

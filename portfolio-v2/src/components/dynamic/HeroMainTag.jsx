@@ -4,9 +4,9 @@ import Typed from 'typed.js';
 const TypingAnimation = () => {
     useEffect(() => {
         const options = {
-            strings: ["web-anything", "web-everything",  "web-sites", "web-apps", " web-Interfaces"],
-            typeSpeed: 80,
-            backSpeed: 80,
+            strings: [" web-Interfaces", "web-anything", "web-everything",  "web-sites", "web-apps"],
+            typeSpeed: 60,
+            backSpeed: 70,
             backDelay: 1000,
             loop: true,
             showCursor: false,

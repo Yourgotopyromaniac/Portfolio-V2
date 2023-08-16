@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const accentSlice = createSlice({
     name: 'accent',
     initialState: {
-        selectedAccentColor: '#6fd10c', 
+        selectedAccentColor: '#ff4040', 
         availableAccentColors: ['#ff4040', '#ff9740', '#265ea0', '#6fd10c'],
     },
     reducers: {
