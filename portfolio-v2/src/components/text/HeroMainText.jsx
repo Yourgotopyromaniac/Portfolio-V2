@@ -10,7 +10,7 @@ const HeroMainText = () => {
   );
 
   return (
-    <div className='text-[90px] hero-sm flex flex-col items-start md:items-center justify-center h-full  leading-tight lg:text-[160px] w-[80%] font-bebas font-extrabold text-start md:text-center z-[8]'>
+    <div className='text-[90px] hero-sm flex flex-col items-start md:items-center justify-center h-full  leading-tight lg:text-[150px] w-[80%] font-bebas font-extrabold text-start md:text-center z-[8]'>
       <div className='relative flex' >
         <motion.h1 initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 8.8, type: 'keyframes' }} >I&#39;m Biola,
         </motion.h1>
