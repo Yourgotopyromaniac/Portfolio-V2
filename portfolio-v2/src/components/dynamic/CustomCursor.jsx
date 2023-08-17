@@ -11,7 +11,7 @@ const CustomCursor = () => {
             innerSize={10}
             outerSize={35}
             innerScale={1.2}
-            outerScale={1.5}
+            outerScale={2}
             outerStyle={{
                 backgroundColor: "rgba(230,230,230,0.9)",
                 mixBlendMode: 'exclusion'

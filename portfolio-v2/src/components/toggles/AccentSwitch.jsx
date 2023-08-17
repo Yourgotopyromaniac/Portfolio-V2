@@ -16,7 +16,7 @@ const AccentSwitch = () => {
 
 
     return (
-        <div className='flex flex-col gap-2 items-center relative left-4'>
+        <div className='flex flex-col h-[68px] flex-wrap gap-2 items-center'>
             {availableAccentColors.map((color) => (
                 <motion.div
                     key={color}

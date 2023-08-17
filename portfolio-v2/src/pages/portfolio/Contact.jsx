@@ -58,10 +58,10 @@ const Contact = () => {
               <Image src={arrow} height={60} width={60} alt='arrow' />
             </motion.div></h1>
           <div className='flex flex-wrap w-full text-[40px] md:text-[50px]'>
-              <ContactLink url='/' title='X'/>
-              <ContactLink url='/' title='linkedin'/>
-              <ContactLink url='/' title='Email'/>
-              <ContactLink url='/' title='Github'/>
+              <ContactLink url='https://twitter.com/Biola_E' title='X'/>
+              <ContactLink url='https://www.linkedin.com/in/abiola-awoyemi-a908b51aa/' title='linkedin'/>
+              <ContactLink url='mailto:cipherx809@gmail.com' title='Email'/>
+              <ContactLink url='https://github.com/Yourgotopyromaniac' title='Github'/>
 
           </div>
         </div>

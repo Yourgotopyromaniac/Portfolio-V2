@@ -34,7 +34,7 @@ const Projects = () => {
       desc: 'A worker registry search application for Space Universe Africa.',
       border: 'border-[#050505]',
       background: 'bg-[#f5f5f5]',
-      link: 'worker-registry.vercel.app'
+      link: 'https://worker-registry.vercel.app'
     },
 
     {

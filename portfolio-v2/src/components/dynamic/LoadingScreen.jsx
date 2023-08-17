@@ -46,6 +46,11 @@ const LoadingScreen = () => {
     cover.start({
       opacity: 0,
       transition: { duration: 0.5, delay: 3.6 },
+    }).then(()=>{
+      cover.start({
+        x: -200,
+        transition : { duration : 0}
+      })
     });
   }, [cover]);
 
