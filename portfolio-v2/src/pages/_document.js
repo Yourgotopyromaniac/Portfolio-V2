@@ -9,7 +9,7 @@ export default function Document() {
       <title>Abiola Awoyemi | Frontend Developer</title>
       <meta name="theme-color" content="#090909" />
 
-      <meta name="twitter:card" content="biola_awoyemi" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Abiola Awoyemi | Frontend Developer" />
       <meta name="twitter:description" content="Awoyemi Abiola - Frontend Developer" />
       <meta name="twitter:image" content="/opengraph.png" />
