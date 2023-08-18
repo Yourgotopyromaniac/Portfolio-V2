@@ -8,7 +8,7 @@ const Work = () => {
     const isDark = useSelector((state) => state.theme.isDark);
 
     return (
-        <div className={`w-screen flex flex-col text-[30px] md:text-[40px] relative z-[30] ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>
+        <div className={`w-screen flex flex-col text-[30px] md:text-[40px] relative z-[20] ${isDark ? 'bg-[#090909]' : 'bg-[#d6d6d6]'}`}>
             <motion.div initial={{ y: 40, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, type: 'keyframes' }} viewport={{ once: true }} className={`flex text-[70px] font-bold justify-end leading-tight w-full p-6 border-t-[6px] ${isDark ? 'border-[#d6d6d6]' : 'border-[#090909]'}`}>
                 <h1>Experience</h1>
             </motion.div>

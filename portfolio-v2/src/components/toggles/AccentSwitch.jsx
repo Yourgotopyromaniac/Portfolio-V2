@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { motion } from 'framer-motion'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeAccentColor } from '@/store/accentSlice'
@@ -10,8 +10,16 @@ const AccentSwitch = () => {
         (state) => state.accent
     );
 
-    const handleAccentChange = (color) => {
-        dispatch(changeAccentColor(color));
+    useEffect(() => {
+        const storedAccentColor = localStorage.getItem('userSelectedAccentColor');
+        if (storedAccentColor) {
+            dispatch(changeAccentColor(storedAccentColor));
+        }
+    }, [dispatch]);
+
+    const handleAccentChange = newColor => {
+        dispatch(changeAccentColor(newColor));
+        localStorage.setItem('userSelectedAccentColor', newColor);
     };
 
 

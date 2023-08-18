@@ -25,7 +25,7 @@ const LoadingScreen = () => {
       if (progress < 100) {
         setProgress((prevProgress) => prevProgress + 2);
       }
-    }, 40);
+    }, 30);
 
     return () => clearInterval(interval);
   }, [progress]);
@@ -48,7 +48,7 @@ const LoadingScreen = () => {
       transition: { duration: 0.5, delay: 3.6 },
     }).then(()=>{
       cover.start({
-        x: -200,
+        x: -400,
         transition : { duration : 0}
       })
     });
@@ -56,10 +56,10 @@ const LoadingScreen = () => {
 
 
   return (
-    <div className='fixed top-0 left-0 z-40'>
+    <div className='fixed top-0 left-0 z-40 font-bebas'>
       <motion.p
         animate={cover}
-        className='text-[#d6d6d6] text-[90px] font-extrabold top-14 left-16 md:top-14 md:left-18 absolute z-[150]'>{`${progress}%`}</motion.p>
+        className='text-[#d6d6d6] text-[90px] font-bebas font-extrabold top-14 left-16 md:top-14 md:left-18 absolute z-[150]'>{`${progress}%`}</motion.p>
       <motion.div
         animate={{ display: 'none' }}
         transition={{ delay: 9 }}
