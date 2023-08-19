@@ -60,7 +60,7 @@ const Projects = () => {
       desc: 'The official website for the Hack4Earth hackathon.',
       border: 'border-[#c8ff00]',
       background: 'bg-[#f2f2f2]',
-      link: 'hack4earth.vercel.app'
+      link: 'https://hack4earth.vercel.app'
     }
   ]
 
