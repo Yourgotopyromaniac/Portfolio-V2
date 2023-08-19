@@ -19,8 +19,8 @@ const Home = () => {
   return (
 
     <div className={`w-[100vw] relative font-bebas flex flex-col gap-40 h-full overflow-x-hidden ${isDark ? 'bg-[#090909] text-[#d6d6d6]' : 'bg-[#d6d6d6] text-[#090909]'}  `}>
-      <div className={`w-full fixed top-0 z-[29] h-[18vh] ${isDark ? ' bg-gradient-to-b from-[#090909] to-transparent' : 'bg-transparent'} `}></div>
-      <div className={`w-full fixed bottom-0 z-[29] h-[18vh] ${isDark ? 'bg-gradient-to-t from-[#090909] to-transparent' : 'bg-transparent'}`}></div>
+      <div className={`w-full fixed top-0 z-[29] h-[15vh] ${isDark ? ' bg-gradient-to-b from-[#090909] to-transparent' : 'bg-transparent'} `}></div>
+      <div className={`w-full fixed bottom-0 z-[29] h-[15vh] ${isDark ? 'bg-gradient-to-t from-[#090909] to-transparent' : 'bg-transparent'}`}></div>
       <Gears />
       <CustomCursor />
       <LoadingScreen />
