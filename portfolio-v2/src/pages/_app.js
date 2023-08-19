@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:title" content="Abiola Awoyemi | Frontend Developer" />
         <meta name="twitter:description" content="Frontend Developer with experience creating functional and aesthetic web applications." />
         <meta name="twitter:image" content="https://raw.githubusercontent.com/Yourgotopyromaniac/Abiola-Awoyemi/main/Portfolio%20Website/images/opengraph.PNG" />
-        <meta property="twitter:domain" content="https://www.biolaawoyemi.com" />
+        <meta property="twitter:domain" content="biolaawoyemi.com" />
         <meta property="twitter:url" content="https://www.biolaawoyemi.com" />
 
         <meta name="description" content="Frontend Developer with experience creating functional and aesthetic web applications." />
