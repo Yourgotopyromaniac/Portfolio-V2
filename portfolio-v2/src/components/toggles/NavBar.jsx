@@ -12,6 +12,12 @@ const NavBar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
+  const [isHovered4, setIsHovered4] = useState(false);
+
+
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
@@ -72,27 +78,31 @@ const NavBar = () => {
 
 
       <motion.div style={{borderColor: selectedAccentColor}} variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.2 }} className='bg-[#090909] transition-all border-b fixed z-[31] top-0 h-[25vh] w-full flex items-center justify-center'>
-        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.5, delay: 1, type:"keyframes" }}  className='w-[70%] flex justify-start items-center'>
-          <Link onClick={handleToggle} href={'#home'}><h1 className='md:text-[100px] text-[#d6d6d6] text-[80px] font-extrabold'>Home</h1></Link>
+        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.5, delay: 1, type:"keyframes" }}  className='w-[70%] flex justify-start items-center relative z-10'>
+          <Link onMouseEnter={()=>{setIsHovered(true)}} onMouseLeave={()=>{setIsHovered(false)}} onClick={handleToggle} href={'#home'}><h1 className={`md:text-[100px] relative z-10 text-[80px] transition-all duration-200 font-extrabold ${isHovered ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>Home</h1></Link>
         </motion.div>
+        <motion.div style={{scaleY: isHovered ? 1 : 0, backgroundColor : selectedAccentColor}} className={`absolute bottom-0 left-0 origin-center z-[1] transition-all duration-300 h-full w-full`}></motion.div>
       </motion.div>
 
       <motion.div style={{borderColor: selectedAccentColor}} variants={variants} initial="closed2" animate={isOpen ? "open2" : "closed2"} transition={{ duration: 0.2, delay: 0.4 }} className='fixed bg-[#090909] transition-all border-b z-[31] top-[25vh] h-[25vh] w-full flex items-center justify-center'>
-        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.5, delay: 1.1, type:"keyframes" }} className='w-[70%] flex justify-start items-center'>
-          <Link onClick={handleToggle} href={'#about'}><h1 className='md:text-[100px] text-[#d6d6d6] text-[80px] font-extrabold'>About</h1></Link>
+        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.5, delay: 1.1, type:"keyframes" }} className='w-[70%] flex justify-start items-center relative z-10'>
+          <Link onMouseEnter={()=>{setIsHovered2(true)}} onMouseLeave={()=>{setIsHovered2(false)}} onClick={handleToggle} href={'#about'}><h1 className={`md:text-[100px] relative z-10 text-[80px] transition-all duration-200 font-extrabold ${isHovered2 ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>About</h1></Link>
         </motion.div>
+        <motion.div style={{scaleY: isHovered2 ? 1 : 0, backgroundColor : selectedAccentColor}} className={`absolute bottom-0 left-0 origin-center z-[1] transition-all duration-300 h-full w-full`}></motion.div>
       </motion.div>
 
       <motion.div style={{borderColor: selectedAccentColor}} variants={variants} initial="closed" animate={isOpen ? "open" : "closed"} transition={{ duration: 0.2, delay: 0.6 }} className='fixed bg-[#090909] transition-all border-b z-[31] top-[50vh] h-[25vh] w-full flex items-center justify-center'>
-        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.3, delay: 1.2, type:"keyframes" }} className='w-[70%] flex justify-start items-center'>
-          <Link onClick={handleToggle} href={'#work'}><h1 className='md:text-[100px] text-[#d6d6d6] text-[80px] font-extrabold'>Work</h1></Link>
+        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.3, delay: 1.2, type:"keyframes" }} className='w-[70%] flex justify-start items-center relative z-10'>
+          <Link onMouseEnter={()=>{setIsHovered3(true)}} onMouseLeave={()=>{setIsHovered3(false)}} onClick={handleToggle} href={'#work'}><h1 className={`md:text-[100px] relative z-10 text-[80px] transition-all duration-200 font-extrabold ${isHovered3 ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>Work</h1></Link>
         </motion.div>
+        <motion.div style={{scaleY: isHovered3 ? 1 : 0, backgroundColor : selectedAccentColor}} className={`absolute bottom-0 left-0 origin-center z-[1] transition-all duration-300 h-full w-full`}></motion.div>
       </motion.div>
 
       <motion.div style={{borderColor: selectedAccentColor}} variants={variants} initial="closed2" animate={isOpen ? "open2" : "closed2"} transition={{ duration: 0.2, delay: 0.8 }} className='bg-[#090909] transition-all fixed border-b z-[31] top-[75vh] h-[25vh] w-full flex items-center justify-center'>
-        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.5, delay: 1.3, type:"keyframes" }} className='w-[70%] flex justify-start items-center'>
-          <Link onClick={handleToggle} href={'#contact'}><h1 className='md:text-[100px] text-[#d6d6d6] text-[80px] font-extrabold'>Contact</h1></Link>
+        <motion.div variants={variants} initial="closed3" animate={isOpen ? "open3" : "closed3"} transition={{ duration: 0.5, delay: 1.3, type:"keyframes" }} className='w-[70%] flex justify-start items-center relative z-10'>
+          <Link onMouseEnter={()=>{setIsHovered4(true)}} onMouseLeave={()=>{setIsHovered4(false)}} onClick={handleToggle} href={'#contact'}><h1 className={`md:text-[100px] relative z-10 text-[80px] transition-all duration-200 font-extrabold ${isHovered4 ? 'text-[#090909]' : 'text-[#d6d6d6]'}`}>Contact</h1></Link>
         </motion.div>
+        <motion.div style={{scaleY: isHovered4 ? 1 : 0, backgroundColor : selectedAccentColor}} className={`absolute bottom-0 left-0 origin-center z-[1] transition-all duration-300 h-full w-full`}></motion.div>
         <AccentSwitch />
       </motion.div>
 

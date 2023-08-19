@@ -33,7 +33,7 @@ const ContactLink = ({ title, url }) => {
             <Link target='_blank' onMouseEnter={handleHover} onMouseLeave={handleLeave} className={`relative transition-all p-2 pb-0 md:pr-8 pr-6 duration-200 ${isHovered ? 'text-[#090909]' : ''}`} href={url}>
                 <span className='relative z-10 font-semibold items-center'>{title}
                 </span>
-                <motion.div style={{ backgroundColor: selectedAccentColor }} className={`absolute bottom-0 left-0 origin-bottom z-[1] transition-all duration-200 h-full ${isHovered ? 'scale-y-100' : 'scale-y-0'} w-full`}></motion.div>
+                <motion.div style={{ backgroundColor: selectedAccentColor }} className={`absolute bottom-0 left-0 origin-center z-[1] transition-all duration-200 h-full ${isHovered ? 'scale-y-100' : 'scale-y-0'} w-full`}></motion.div>
             </Link>
         </div>
     )
