@@ -25,7 +25,7 @@ const LoadingScreen = () => {
       if (progress < 100) {
         setProgress((prevProgress) => prevProgress + 2);
       }
-    }, 30);
+    }, 40);
 
     return () => clearInterval(interval);
   }, [progress]);
