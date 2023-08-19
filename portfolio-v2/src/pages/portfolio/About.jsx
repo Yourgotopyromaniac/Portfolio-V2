@@ -15,7 +15,7 @@ const About = () => {
     <div id='about' className='w-full py-20 flex flex-col items-center'>
       <div className='w-[90%] lg:pl-16 lg:ml-8 flex flex-col justify-center items-start text-start'>
 
-        <h1 style={{ color: selectedAccentColor }} className='text-[60px] lg:text-[90px] mb-5 header-sm font-semibold'>Me, Myskills & I</h1>
+        <h1 style={{ color: selectedAccentColor }} className='text-[60px] lg:text-[90px] mb-5 header-sm font-semibold'>About</h1>
 
         <div className='flex flex-col w-[90%] md:w-[90%] about-sm leading-snug font-medium text-[30px] lg:text-[50px]'>
           <AboutSlice text="I'm a Frontend Engineer with 4 years of experience" />
