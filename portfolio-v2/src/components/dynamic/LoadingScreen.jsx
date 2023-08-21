@@ -15,7 +15,7 @@ const LoadingScreen = () => {
     const loadAnimComplete = setTimeout(() => {
       document.body.style.overflowY = 'scroll';
       document.body.style.overflowX = 'hidden';
-    }, 7000)
+    }, 9500)
 
     return () => clearTimeout(loadAnimComplete);
   }, [])
