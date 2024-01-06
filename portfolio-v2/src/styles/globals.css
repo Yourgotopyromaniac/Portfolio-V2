@@ -99,6 +99,11 @@
     background-size: cover;
   }
 
+  .projectgl {
+    background-image: url('../assets/getlinked.webp');
+    background-size: cover;
+  }
+
   .exon-outline {
     font-family: 'ExonOutline', sans-serif;
   }

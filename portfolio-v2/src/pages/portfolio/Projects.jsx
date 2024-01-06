@@ -61,6 +61,19 @@ const Projects = () => {
       border: 'border-[#c8ff00]',
       background: 'bg-[#f2f2f2]',
       link: 'https://hack4earth.vercel.app'
+    },
+
+    {
+      imgClass: 'projectgl',
+      name: 'GetLinked',
+      stack: 'NextJS, Tailwind.',
+      bgColor: 'from-[#150e28] via-[#150e28]',
+      color : '#D434FE',
+      textColor: 'text-[#D434FE]',
+      desc: 'My pixel-perfect implementation from the getlinked pre-hackathon challenge, I did not win, shocking, I know.',
+      border: 'border-[#D434FE]',
+      background: 'bg-[#150e28]',
+      link: 'https://getlinked-two-puce.vercel.app/'
     }
   ]
 
@@ -78,7 +91,7 @@ const Projects = () => {
         transition={{ duration: 0.3, delay: 0.5, type: 'keyframes' }}
         layout
         className='border-4 origin-center h-[65%] w-[95%] md:w-[90%]'>
-
+          
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
