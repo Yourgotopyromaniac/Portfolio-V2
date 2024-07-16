@@ -58,7 +58,7 @@
   }
 
   .projects {
-    scrollbar-width: thin;
+    scrollbar-width: 0px;
     scrollbar-color: transparent;
   }
 
@@ -103,6 +103,17 @@
     background-image: url('../assets/getlinked.webp');
     background-size: cover;
   }
+
+  .project5pd {
+    background-image: url('../assets/5pd.PNG');
+    background-size: cover;
+  }
+
+  .projectsc {
+    background-image: url('../assets/snapcart.PNG');
+    background-size: cover;
+  }
+
 
   .exon-outline {
     font-family: 'ExonOutline', sans-serif;

@@ -11,6 +11,33 @@ const Projects = () => {
 
 
   const projectData = [
+
+    {
+      imgClass: 'project5pd',
+      name: '5 Percent Daily',
+      stack: 'ReactJS, Typescript, Context, Tailwind, Material UI.',
+      bgColor: 'from-[#ffffff] via-[#ffffff]',
+      color : '#FF9D00',
+      textColor: 'text-[#FF9D00]',
+      desc: '5pd is a financial technology and automated investment platorm that empowers users and investors with reliable earnings through cutting-edge solutions, backed by expert insights.',
+      border: 'border-[#FF9D00]',
+      background: 'bg-[#ffffff]',
+      link: 'https://5pd-web.vercel.app'
+    },
+
+    {
+      imgClass: 'projectsc',
+      name: 'Snapcart',
+      stack: 'NextJS, Framer motion, Tailwind.',
+      bgColor: 'from-[#0c0c0c] via-[#0c0c0c]',
+      color : '#db4cb6',
+      textColor: 'text-[#db4cb6]',
+      desc: 'Businesses of all sizes use Snapcart to manage in-person and online orders with tools built for you.',
+      border: 'border-[#db4cb6]',
+      background: 'bg-[#0c0c0c]',
+      link: 'https://snapcart.store'
+    },
+
     {
       imgClass: 'projectrad',
       name: 'radioadspread',
