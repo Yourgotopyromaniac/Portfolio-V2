@@ -18,7 +18,7 @@ const About = () => {
         <h1 style={{ color: selectedAccentColor }} className='text-[60px] lg:text-[90px] mb-5 header-sm font-semibold'>About</h1>
 
         <div className='flex flex-col w-[90%] md:w-[90%] about-sm leading-snug font-medium text-[30px] lg:text-[50px]'>
-          <AboutSlice text="I'm a Frontend Engineer with 4 years of experience" />
+          <AboutSlice text="I'm a Frontend Engineer with 5 years of experience" />
           <AboutSlice text="building higly perfomant, accesible and responsive" />
           <AboutSlice text="web applications." />
           <br/>

@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'ExonOutline';
-  src: url('/fonts/ExonOutline.otf') format('opentype');
+  font-family: "ExonOutline";
+  src: url("/fonts/ExonOutline.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'ExonRegular';
-  src: url('/fonts/ExonRegular.otf') format('opentype');
+  font-family: "ExonRegular";
+  src: url("/fonts/ExonRegular.otf") format("opentype");
 }
 
 * {
@@ -49,12 +49,26 @@
 
   .better-linear-gradient-top {
     background: rgb(9, 9, 9);
-    background: linear-gradient(180deg, rgba(9, 9, 9, 1) 0%, rgba(9, 9, 9, 0.75) 25%, rgba(9, 9, 9, 0.5) 50%, rgba(9, 9, 9, 0.25) 75%, rgba(9, 9, 9, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 1) 0%,
+      rgba(9, 9, 9, 0.75) 25%,
+      rgba(9, 9, 9, 0.5) 50%,
+      rgba(9, 9, 9, 0.25) 75%,
+      rgba(9, 9, 9, 0) 100%
+    );
   }
 
   .better-linear-gradient-bottom {
     background: rgb(9, 9, 9);
-    background: linear-gradient(0deg, rgba(9, 9, 9, 1) 0%, rgba(9, 9, 9, 0.75) 25%, rgba(9, 9, 9, 0.5) 50%, rgba(9, 9, 9, 0.25) 75%, rgba(9, 9, 9, 0) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(9, 9, 9, 1) 0%,
+      rgba(9, 9, 9, 0.75) 25%,
+      rgba(9, 9, 9, 0.5) 50%,
+      rgba(9, 9, 9, 0.25) 75%,
+      rgba(9, 9, 9, 0) 100%
+    );
   }
 
   .projects {
@@ -76,51 +90,24 @@
 
   .bg-green {
     background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(4, 200, 16, 0.6252626050420168) 35%, rgba(3, 164, 8, 1) 63%, rgba(24, 139, 3, 1) 78%, rgba(2, 95, 36, 1) 85%, rgba(2, 71, 27, 1) 92%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(4, 200, 16, 0.6252626050420168) 35%,
+      rgba(3, 164, 8, 1) 63%,
+      rgba(24, 139, 3, 1) 78%,
+      rgba(2, 95, 36, 1) 85%,
+      rgba(2, 71, 27, 1) 92%,
+      rgba(0, 0, 0, 1) 100%
+    );
   }
-
-  .projectrad {
-    background-image: url('../assets/rad.webp');
-    background-size: cover;
-  }
-
-  .projectula {
-    background-image: url('../assets/ules.webp');
-    background-size: cover;
-  }
-
-  .projectsu {
-    background-image: url('../assets/registry.webp');
-    background-size: cover;
-  }
-
-  .projecth4e {
-    background-image: url('../assets/hack.webp');
-    background-size: cover;
-  }
-
-  .projectgl {
-    background-image: url('../assets/getlinked.webp');
-    background-size: cover;
-  }
-
-  .project5pd {
-    background-image: url('../assets/5pd.webp');
-    background-size: cover;
-  }
-
-  .projectsc {
-    background-image: url('../assets/snapcart.webp');
-    background-size: cover;
-  }
-
 
   .exon-outline {
-    font-family: 'ExonOutline', sans-serif;
+    font-family: "ExonOutline", sans-serif;
   }
 
   .exon-regular {
-    font-family: 'ExonRegular', sans-serif;
+    font-family: "ExonRegular", sans-serif;
   }
 
   @media (min-width: 640px) and (max-width: 767px) {
@@ -139,7 +126,6 @@
     .landscape-rotate {
       transform: rotate(0);
     }
-
   }
 
   /* Custom styles for screens below 350px */
@@ -168,5 +154,4 @@
       font-size: 15px;
     }
   }
-
 }
