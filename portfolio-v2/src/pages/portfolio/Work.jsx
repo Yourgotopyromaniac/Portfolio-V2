@@ -66,7 +66,7 @@ const Work = () => {
         </div>
 
         <div className="flex flex-col items-start gap-2">
-          <h1>Crestville Apartments</h1>
+          <h1>Crestville Apartments, Frontend Engineer</h1>
           <p className="text-[20px] md:text-[25px]">May, 2025 - Present</p>
         </div>
       </motion.div>
