@@ -57,7 +57,7 @@ const Contact = () => {
             <motion.div initial={{ rotate: 0}} whileInView={{rotate: 135}} transition={{ duration: 0.5, delay: 0.5, type: 'spring'}} style={{ backgroundColor: selectedAccentColor }} className='w-[80px] absolute bottom-0 right-0 h-[80px] md:relative flex items-center justify-center border-2 border-[#090909] rounded-[50%]'>
               <Image src={arrow} height={60} width={60} alt='arrow' />
             </motion.div></h1>
-          <div className='flex flex-wrap w-full text-[40px] md:text-[50px]'>
+          <div className='flex flex-wrap w-full text-[30px] md:text-[38px]'>
               <ContactLink url='https://twitter.com/Biola_E' title='X'/>
               <ContactLink url='https://www.linkedin.com/in/abiola-awoyemi-a908b51aa/' title='linkedin'/>
               <ContactLink url='mailto:cipherx809@gmail.com' title='Email'/>

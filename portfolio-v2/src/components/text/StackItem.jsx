@@ -10,7 +10,7 @@ const StackItem = ({ title, items, align, reverse, rotate }) => {
     );
 
     return (
-        <div className={`flex flex-col md:text-[25px] text-[18px] w-full ${align}`}>
+        <div className={`flex flex-col md:text-[18px] text-[14px] w-full ${align}`}>
             <motion.h1 initial={{ y: 30, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.5,  type:'keyframes'  }} viewport={{ once: true }} style={{ color: selectedAccentColor }} className='text-[26px] md:text-[35px]'>{title}</motion.h1>
             {items.map((item, index) => (
                 <motion.span

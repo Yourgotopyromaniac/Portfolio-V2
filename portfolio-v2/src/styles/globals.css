@@ -12,6 +12,24 @@
   src: url("/fonts/ExonRegular.otf") format("opentype");
 }
 
+@layer base {
+  /* Body copy runs on Space Grotesk; Bebas Neue is reserved for headings.
+     Bebas is condensed and caps-only, so it stays on display type only. */
+  body {
+    font-family: "Space Grotesk Variable", "Space Grotesk", ui-sans-serif,
+      system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+
 * {
   -webkit-user-select: none;
   /* Safari */
@@ -74,6 +92,14 @@
   .projects {
     scrollbar-width: 0px;
     scrollbar-color: transparent;
+    touch-action: pan-x;
+  }
+
+  /* Native image/link dragging would hijack the click-drag scroll gesture. */
+  .projects img,
+  .projects a,
+  .projects svg {
+    -webkit-user-drag: none;
   }
 
   .projects::-webkit-scrollbar {
@@ -139,7 +165,7 @@
     }
 
     .about-sm {
-      font-size: 20px;
+      font-size: 15px;
     }
 
     .project-header-sm {
@@ -151,7 +177,7 @@
     }
 
     .project-sm {
-      font-size: 15px;
+      font-size: 12px;
     }
   }
 }

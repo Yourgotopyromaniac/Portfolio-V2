@@ -45,7 +45,7 @@ const Work = () => {
 
         <div className="flex flex-col items-start gap-2">
           <h1>ODJTech Multimedia, Frontend Engineer</h1>
-          <p className="text-[20px] md:text-[25px]">Nov, 2024 - Present</p>
+          <p className="text-[15px] md:text-[18px]">Nov, 2024 - Present</p>
         </div>
       </motion.div>
       <motion.div
@@ -67,7 +67,7 @@ const Work = () => {
 
         <div className="flex flex-col items-start gap-2">
           <h1>Crestville Apartments, Frontend Engineer</h1>
-          <p className="text-[20px] md:text-[25px]">May, 2025 - Present</p>
+          <p className="text-[15px] md:text-[18px]">May, 2025 - Present</p>
         </div>
       </motion.div>
       <motion.div
@@ -84,7 +84,7 @@ const Work = () => {
         </div>
         <div className="flex flex-col items-start gap-2">
           <h1>Vobb, Frontend Engineer</h1>
-          <p className="text-[20px] md:text-[25px]">Jan, 2025 - Aug, 2025</p>
+          <p className="text-[15px] md:text-[18px]">Jan, 2025 - Aug, 2025</p>
         </div>
       </motion.div>
       <motion.div
@@ -102,7 +102,7 @@ const Work = () => {
 
         <div className="flex flex-col items-start gap-2">
           <h1>5Percent Daily, Frontend Developer</h1>
-          <p className="text-[20px] md:text-[25px]">Jan, 2023 - Apr, 2024</p>
+          <p className="text-[15px] md:text-[18px]">Jan, 2023 - Apr, 2024</p>
         </div>
       </motion.div>
       <motion.div
@@ -120,7 +120,7 @@ const Work = () => {
 
         <div className="flex flex-col items-start gap-2">
           <h1>Transmit (fka Radioadspread), Frontend Developer</h1>
-          <p className="text-[20px] md:text-[25px]">Jan, 2023 - July, 2023</p>
+          <p className="text-[15px] md:text-[18px]">Jan, 2023 - July, 2023</p>
         </div>
       </motion.div>
       <motion.div
@@ -138,7 +138,7 @@ const Work = () => {
 
         <div className="flex flex-col items-start gap-2">
           <h1>Space Universe Africa, Frontend Development Intern</h1>
-          <p className="text-[20px] md:text-[25px]">Jan, 2023 - July, 2023</p>
+          <p className="text-[15px] md:text-[18px]">Jan, 2023 - July, 2023</p>
         </div>
       </motion.div>
       <motion.div
@@ -160,7 +160,7 @@ const Work = () => {
 
         <div className="flex flex-col items-start gap-2">
           <h1>Freelance</h1>
-          <p className="text-[20px] md:text-[25px]">Jan, 2022 - Present</p>
+          <p className="text-[15px] md:text-[18px]">Jan, 2022 - Present</p>
         </div>
       </motion.div>
     </div>

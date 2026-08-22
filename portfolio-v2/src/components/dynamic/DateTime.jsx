@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import '@fontsource/bebas-neue';
 import { format, intervalToDuration } from 'date-fns';
 import { useSelector } from 'react-redux';
 

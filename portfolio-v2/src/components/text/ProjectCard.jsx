@@ -24,24 +24,25 @@ const ProjectCard = ({
         <div
           className={`absolute z-[1] w-full h-1/2 top-0 flex items-center justify-center`}
         >
-          <Image src={img} alt="portfolio image" width={150} />
+          <Image src={img} alt="portfolio image" width={150} draggable={false} />
         </div>
 
         <div
           className={`w-full h-full absolute z-[5] top-0 ${textColor} flex flex-col rounded-md justify-end`}
         >
-          <div className="self-start h-[60%] landscape-tight md:py-2 p-4 px-6 font-bebas flex flex-col justify-center gap-3">
+          <div className="self-start h-[60%] landscape-tight md:py-2 p-4 px-6 flex flex-col justify-center gap-3">
             <h1 className="lg:text-[50px] text-[35px] project-header-sm">
               {name}
             </h1>
-            <p className="lg:text-[25px] text-[20px] project-sm">
+            <p className="lg:text-[17px] text-[14px] project-sm">
               Built with {stack}
             </p>
-            <p className="lg:text-[20px] text-[15px]">{desc}</p>
+            <p className="lg:text-[15px] text-[12px]">{desc}</p>
             <Link
               href={link}
               target="_blank"
-              className="lg:text-[25px] text-[20px] underline flex items-center gap-0"
+              draggable={false}
+              className="lg:text-[18px] text-[15px] underline flex items-center gap-0 w-fit"
             >
               View
               <svg

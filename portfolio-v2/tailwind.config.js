@@ -10,7 +10,8 @@ module.exports = {
 
     },
     fontFamily: {
-      'bebas': ['Bebas Neue', 'sans-serif']
+      'bebas': ['Bebas Neue', 'sans-serif'],
+      'grotesk': ['"Space Grotesk Variable"', '"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif']
     }
   },
   plugins: [],

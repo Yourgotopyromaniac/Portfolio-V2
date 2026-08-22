@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <div style={{
         backgroundColor: selectedAccentColor
-    }} className='w-[80%] self-center relative z-[30] text-[15px] md:text-[25px] flex items-center justify-center p-6'>
-        <h2 className='w-[90%] text-center text-[#090909]'>This is where footer content would be, if I had footer content</h2>
+    }} className='w-[80%] self-center relative z-[30] text-[13px] md:text-[18px] flex items-center justify-center p-6'>
+        <p className='w-[90%] text-center text-[#090909]'>This is where footer content would be, if I had footer content</p>
     </div>
   )
 }

@@ -17,7 +17,7 @@ const About = () => {
 
         <h1 style={{ color: selectedAccentColor }} className='text-[60px] lg:text-[90px] mb-5 header-sm font-semibold'>About</h1>
 
-        <div className='flex flex-col w-[90%] md:w-[90%] about-sm leading-snug font-medium text-[30px] lg:text-[50px]'>
+        <div className='flex flex-col w-[90%] md:w-[90%] about-sm leading-snug font-medium text-[21px] lg:text-[35px]'>
           <AboutSlice text="I'm a Frontend Engineer with 5 years of experience" />
           <AboutSlice text="building higly perfomant, accesible and responsive" />
           <AboutSlice text="web applications." />
@@ -28,7 +28,7 @@ const About = () => {
       
 
       <div className='w-[90%] lg:pl-16 lg:ml-8 flex flex-col justify-center items-start text-start'>
-        <div className='flex flex-col w-[100%] md:w-[100%] about-sm leading-snug font-medium text-[30px] lg:text-[50px]'>
+        <div className='flex flex-col w-[100%] md:w-[100%] about-sm leading-snug font-medium text-[21px] lg:text-[35px]'>
 
           <AboutSlice text="I have a solid understanding of frontend design patterns" />
           <AboutSlice text="and best practices, which I always stay up to date on by" />

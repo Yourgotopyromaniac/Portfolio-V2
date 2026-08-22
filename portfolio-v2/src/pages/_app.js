@@ -1,4 +1,6 @@
 import '@/styles/globals.css'
+import '@fontsource/bebas-neue';
+import '@fontsource-variable/space-grotesk';
 import { Provider } from 'react-redux';
 import store from '../store/store';
 import Head from 'next/head';
