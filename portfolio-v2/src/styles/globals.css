@@ -92,7 +92,8 @@
   .projects {
     scrollbar-width: 0px;
     scrollbar-color: transparent;
-    touch-action: pan-x;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
   }
 
   /* Native image/link dragging would hijack the click-drag scroll gesture. */

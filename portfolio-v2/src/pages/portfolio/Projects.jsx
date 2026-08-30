@@ -6,7 +6,6 @@ import unispend from "@/assets/unispend.svg";
 import crestville from "@/assets/crestville.svg";
 import tredi from "@/assets/tredi.svg";
 import safebridge from "@/assets/safebridge-l.svg";
-import lockedin from "@/assets/lockedin.svg";
 import studentpaddy from "@/assets/student-paddy.svg";
 import testing123 from "@/assets/testing123.png";
 import betterMarkdown from "@/assets/better-markdown.png";
@@ -19,38 +18,70 @@ const Projects = () => {
   );
 
   const scrollRef = useRef(null);
-  const drag = useRef({ active: false, startX: 0, startScroll: 0, moved: 0 });
+  const drag = useRef({
+    active: false,
+    captured: false,
+    startX: 0,
+    startScroll: 0,
+    moved: 0,
+  });
   const [isDragging, setIsDragging] = useState(false);
+
   const handlePointerDown = (event) => {
     const el = scrollRef.current;
-    if (!el || event.pointerType !== "mouse" || event.button !== 0) return;
+    if (!el) return;
+    drag.current = {
+      active: false,
+      captured: false,
+      startX: 0,
+      startScroll: 0,
+      moved: 0,
+    };
+    if (event.pointerType !== "mouse" || event.button !== 0) return;
 
     drag.current = {
       active: true,
+      captured: false,
       startX: event.clientX,
       startScroll: el.scrollLeft,
       moved: 0,
     };
-    setIsDragging(true);
-    event.currentTarget.setPointerCapture(event.pointerId);
   };
 
   const handlePointerMove = (event) => {
     const el = scrollRef.current;
-    if (!drag.current.active || !el) return;
+    const state = drag.current;
+    if (!state.active || !el) return;
 
-    const delta = event.clientX - drag.current.startX;
-    drag.current.moved = Math.max(drag.current.moved, Math.abs(delta));
-    el.scrollLeft = drag.current.startScroll - delta;
+    const delta = event.clientX - state.startX;
+    state.moved = Math.max(state.moved, Math.abs(delta));
+
+    if (!state.captured) {
+      if (state.moved <= DRAG_THRESHOLD) return;
+
+      state.captured = true;
+      setIsDragging(true);
+      el.style.scrollSnapType = "none";
+      event.currentTarget.setPointerCapture(event.pointerId);
+    }
+
+    el.scrollLeft = state.startScroll - delta;
   };
 
   const handlePointerUp = (event) => {
-    if (!drag.current.active) return;
-    drag.current.active = false;
+    const el = scrollRef.current;
+    const state = drag.current;
+    if (!state.active) return;
+
+    state.active = false;
     setIsDragging(false);
 
-    if (event.pointerId != null && event.currentTarget.hasPointerCapture?.(event.pointerId)) {
-      event.currentTarget.releasePointerCapture(event.pointerId);
+    if (state.captured) {
+      state.captured = false;
+      if (el) el.style.scrollSnapType = "";
+      if (event.currentTarget.hasPointerCapture?.(event.pointerId)) {
+        event.currentTarget.releasePointerCapture(event.pointerId);
+      }
     }
   };
 
@@ -167,9 +198,6 @@ const Projects = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 1, type: "keyframes" }}
-          // Snapping is suspended mid-drag so it doesn't fight scrollLeft;
-          // restoring it on release lets the browser settle on the nearest card.
-          style={{ scrollSnapType: isDragging ? "none" : "x mandatory" }}
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
