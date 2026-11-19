@@ -149,18 +149,6 @@ const Projects = () => {
       background: "bg-[#FFFFFF]",
       link: "https://safebridge.africa",
     },
-
-    {
-      img: tredi,
-      name: "Tredi",
-      stack: "ReactJS, Framer motion, Tailwind.",
-      color: "#FFFFFF",
-      textColor: "text-[#FFFFFF]",
-      desc: "Manage stock, sales, expenses, customers, and reps across multiple shops — all in one simple platform.",
-      border: "border-[#FFFFFF]",
-      background: "bg-[#014748]",
-      link: "https://tredibooks.com",
-    },
     {
       img: studentpaddy,
       name: "Student Paddy",
